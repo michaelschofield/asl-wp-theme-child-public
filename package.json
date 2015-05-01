@@ -1,0 +1,31 @@
+{
+  "name": "ASPL",
+  "version": "0.0.1",
+  "description": "Alvin Sherman Public Library Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shermanlibrary/public-website.git"
+  },
+  "keywords": [
+    "flat",
+    "mobile-first"
+  ],
+  "author": "Michael Schofield",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shermanlibrary/public-website/issues"
+  },
+  "homepage": "https://github.com/shermanlibrary/public-website",
+  "devDependencies": {
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-concat": "^2.2.0",
+    "gulp-jshint": "^1.6.3",
+    "gulp-rename": "^1.2.0",
+    "gulp-ruby-sass": "^0.5.0",
+    "gulp-uglify": "^0.3.0"
+  }
+}
