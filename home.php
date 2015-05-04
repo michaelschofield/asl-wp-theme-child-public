@@ -91,19 +91,19 @@ body {
 
 		<article class="col-md--fourcol col-lg--fourcol media">
 
-			<a class="shadow" href="http://sherman.library.nova.edu/sites/spotlight/event/de-la-cruz-collection/">
-				<img src="http://public.library.nova.edu/wp-content/uploads/2015/04/de-la-cruz.jpg" alt="Selections from the de la Cruz Exhibit">
+			<a class="shadow" href="//sherman.library.nova.edu/sites/spotlight/event/circle-friends-annual-meeting-featuring-american-bombshells/">
+				<img src="http://public.library.nova.edu/wp-content/uploads/2015/05/american-bombshells.jpg" alt="Selections from the de la Cruz Exhibit">
 			</a>
 
 			<section class="card--alt">
-				<h2 class="align-center gamma">Less Than a Week!</h2>
+				<h2 class="align-center gamma">American Bombshells</h2>
 				<p class="zeta">
-					The art of Kathryn Andrews, Rachel Harrison, Paulina Olowska, and Dana Schutz
-					will cycle out of our gallery after Monday, May 4th.
+					<strong><a href="//www.americanbombshells.com">The American Bombshells</a></strong> perform USO-style at the 
+					the <a href="//sherman.library.nova.edu/sites/friends">Circle of Friends</a> 2015 Annual Meeting.
 				</p>
 
 				<div class="align-center">
-				<a class="button button--default button--small" href="http://sherman.library.nova.edu/sites/spotlight/event/de-la-cruz-collection/">Don't Miss It!</a>
+				<a class="button button--default button--small" href="//sherman.library.nova.edu/sites/spotlight/event/circle-friends-annual-meeting-featuring-american-bombshells/">Dinner and a Show</a>
 				</div>
 			</section>
 
@@ -218,49 +218,36 @@ body {
 		<article class="card--alt clearfix" role="article">
 
 				<header>
-					<a href="http://www.nova.edu/library/enews/enews-2015-04-01.html"><b>Monthly Newsletter</b></a>
+					<a href="http://www.nova.edu/library/enews/enews-2015-05-01.html"><b>Monthly Newsletter</b></a>
 					<h3 class="hide-accessible">E-News</h3>
 				</header>
 
 				<section>
-					<p class="zeta no-margin"><b>April 2015 &mdash;</b> 
-						This year the <abbr title="Nova Southeastern University">NSU</abbr> Alvin Sherman Library
-						was voted by readers of Broward Family Life their <a href="http://www.nova.edu/library/enews/images/BrowardFamilyLifearticle.JPG">favorite
-						place to get smart</a>. This is actually the <strong>third year</strong> the library has received this honor!
-						<a href="http://www.nova.edu/library/enews/enews-2015-04-01.html">See what's happening</a>.
+					<p class="zeta no-margin"><b>May 2015 &mdash;</b> 
+						Slide into summer by signing up for our Summer Reading Rewards program for adults, children, and teens. You can easily sign up <a href="//public.library.nova.edu/summer">online</a>
+						any time between May 11 and June 4.
+						<a href="http://www.nova.edu/library/enews/enews-2015-05-01.html">See what's happening</a>.
 					</p>
 				</section>
 
 		</article>
 
-		<article class="card--alt clearfix" role="article">
+		<article class="media">
+			<br>
+			<a class="shadow" href="//sherman.library.nova.edu/sites/spotlight/event/edible-prose-host-author-janet-lynn-roseman-phd/">
+				<img src="http://public.library.nova.edu/wp-content/uploads/2015/05/janet-lynn-joan-of-arc.jpg" alt="Janet Lynn Roseman">
+			</a>				
 
-			<div class="col-md--ninecol col-lg--eightcol col--last">
-
-				<header>
-					<a href="http://sherman.library.nova.edu/sites/spotlight/series/edible-prose/"><b>Book Club</b></a>
-					<h3 class="card__title delta">April Pick</h3>
-				</header>
-
-				<section>
-					<p class="zeta no-margin">
-						Start reading today and join us for this month's pick 
-						<a href="http://novacat.nova.edu/record=b1537327">The Curious Incident of the Dog in the Night-time</a>
-						by Mark Haddon. 
-					</p>
-				</section>
-
-			</div>
-
-			<div class="col-md--threecol col-lg--fourcol media">
-				<a href="http://sherman.library.nova.edu/sites/spotlight/event/edible-prose-reads-z-novel-zelda-fitzgerald/">
-					<img 	src="http://www.syndetics.com/index.php?isbn=0385509456/mc.gif&client=novaseu"
-							srcset="http://www.syndetics.com/index.php?isbn=0385509456/sc.gif&client=novaseu 320w,
-						 			http://www.syndetics.com/index.php?isbn=0385509456/mc.gif&client=novaseu 720w,
-						 			http://www.syndetics.com/index.php?isbn=0385509456/lc.gif&client=novaseu 1024w"
-				 			alt="Cover of Z: A novel of Zelda Fitzgerald">
-	 			</a>				
-			</div>
+			<section class="card--alt">
+				<h2 class="align-center gamma">Janet Lynn Roseman</h2>
+				<p class="zeta">
+					<abbr title="Nova Southeastern University">NSU</abbr> Professor Janet Lynn Roseman, PhD, presents her new book <strong>If Joan of 
+					Arc had Cancer: Finding Courage, Faith, and Healing from History's Most Inspirational Warrior</strong>.
+				</p>
+				<div class="align-center">
+					<a class="button button--default button--small" href="//sherman.library.nova.edu/sites/spotlight/event/edible-prose-host-author-janet-lynn-roseman-phd/">Details</a>
+				</div>
+			</section>
 
 		</article>
 
