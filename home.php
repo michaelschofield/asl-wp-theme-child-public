@@ -52,6 +52,8 @@ body {
 
 </style>
 
+	<!--<section class="alert alert--warning no-margin"></section>-->
+
 	<form action="http://novacat.nova.edu/search/X/" role="form" name="novacat_search" id="novacat_search" method="get" class="background-base has-background form no-margin" role="form">
 		<div class="center-grid clearfix col-md--eightcol" style="padding: 2em 0 1em;">
 			<ul>
@@ -70,7 +72,7 @@ body {
 
 	<section class="clearfix hero--small _col--adjust wrap">
 		
-		<article class="col-md--fourcol col-lg--fourcol media">
+		<article class="col-md--sixcol col-lg--fourcol media">
 			<a class="shadow" href="http://public.library.nova.edu/brad-meltzer/">
 				<img src="http://public.library.nova.edu/wp-content/uploads/2015/04/the-presidents-shadow.jpg" alt="Brad Meltzer">
 			</a>				
@@ -89,29 +91,29 @@ body {
 
 		</article>
 
-		<article class="col-md--fourcol col-lg--fourcol media">
+		<article class="col-md--sixcol col-lg--fourcol media">
 
-			<a class="shadow" href="//sherman.library.nova.edu/sites/spotlight/event/circle-friends-annual-meeting-featuring-american-bombshells/">
-				<img src="http://public.library.nova.edu/wp-content/uploads/2015/05/american-bombshells.jpg" alt="Selections from the de la Cruz Exhibit">
+			<a class="shadow" href="//sherman.library.nova.edu/sites/spotlight/event/artists-conservations-green-white-blue-exhibit/">
+				<img src="http://public.library.nova.edu/wp-content/uploads/2015/05/artists-for-conservation.jpg" alt="Selections from the de la Cruz Exhibit">
 			</a>
 
 			<section class="card--alt">
-				<h2 class="align-center gamma">American Bombshells</h2>
+				<h2 class="align-center gamma">Artists for Conservation</h2>
 				<p class="zeta">
-					<strong><a href="//www.americanbombshells.com">The American Bombshells</a></strong> perform USO-style at the 
-					the <a href="//sherman.library.nova.edu/sites/friends">Circle of Friends</a> 2015 Annual Meeting.
+					This <strong>Green, White, and Blue</strong> exhibit represents showcases 
+					many of the world's most recognized and accomplished in the nature art genre.
 				</p>
 
 				<div class="align-center">
-				<a class="button button--default button--small" href="//sherman.library.nova.edu/sites/spotlight/event/circle-friends-annual-meeting-featuring-american-bombshells/">Dinner and a Show</a>
+				<a class="button button--default button--small" href="//sherman.library.nova.edu/sites/spotlight/event/artists-conservations-green-white-blue-exhibit/">In the Gallery</a>
 				</div>
 			</section>
 
 		</article>
 
-		<article class="col-md--fourcol col-lg--fourcol media">
+		<article class="col-md--twelvecol col-lg--fourcol media">
 
-			<a class="shadow" href="http://sherman.library.nova.edu/sites/spotlight/event/summer-reading-rewards-early-registration/">
+			<a class="shadow" href="/summer/">
 				<img src="http://public.library.nova.edu/wp-content/uploads/2015/04/summer-reading.jpg" alt="Summer Programs">
 			</a>
 
@@ -124,7 +126,7 @@ body {
 				</p>
 
 				<div class="align-center">
-				<a class="button button--default button--small" href="//public.library.nova.edu/summer/">Save the Date</a>
+				<a class="button button--default button--small" href="/summer/">Save the Date</a>
 				</div>
 			</section>
 
@@ -166,18 +168,18 @@ body {
 
 <div class="hero clearfix wrap">
 
-	<div class="col-md--eightcol">
+	<div class="col-md--sixcol col-lg--eightcol">
 
 		<section class="card--alt">
 
 		<div class="hero clearfix">
 
-			<div class="sixcol first media">
+			<div class="col-lg--sixcol media">
 				<img src="http://sherman.library.nova.edu/sites/spotlight/files/2015/01/all_devices_541.png" alt="Example of what Flipster looks like in the browser, on  phones, and on tablets." width="541" height="272" class="alignnone size-full wp-image-4275" />
 			</div>
 
-			<div class="sixcol last">
-				<h2 class="gamma">Drop your subscriptions</h2>
+			<div class="col-lg--sixcol col--last">
+				<h2 class="gamma">Magazines!</h2>
 				<p class="zeta no-margin">
 					You can now get all of your magazines for free on your phone, your tablet, or in the browser. 
 				</p>
@@ -213,41 +215,21 @@ body {
 
 	</div>
 
-	<div class="col-md--fourcol col--last">
+	<div class="col-md--sixcol col-lg--fourcol col--last">
 
 		<article class="card--alt clearfix" role="article">
 
 				<header>
-					<a href="http://www.nova.edu/library/enews/enews-2015-05-01.html"><b>Monthly Newsletter</b></a>
+					<a href="http://www.nova.edu/library/enews/enews-2015-06-01.html"><b>Monthly Newsletter</b></a>
 					<h3 class="hide-accessible">E-News</h3>
 				</header>
 
 				<section>
-					<p class="zeta no-margin"><b>May 2015 &mdash;</b> 
-						Slide into summer by signing up for our Summer Reading Rewards program for adults, children, and teens. You can easily sign up <a href="//public.library.nova.edu/summer">online</a>
-						any time between May 11 and June 4.
-						<a href="http://www.nova.edu/library/enews/enews-2015-05-01.html">See what's happening</a>.
+					<p class="zeta no-margin"><b>June 2015 &mdash;</b> 
+						Summer is here and what better way to kick it off at our Summer Reading Kick-off party? Bring your family for an afternoon of music fun.
+						<a href="http://www.nova.edu/library/enews/enews-2015-06-01.html">See what's happening</a>.
 					</p>
 				</section>
-
-		</article>
-
-		<article class="media">
-			<br>
-			<a class="shadow" href="//sherman.library.nova.edu/sites/spotlight/event/edible-prose-host-author-janet-lynn-roseman-phd/">
-				<img src="http://public.library.nova.edu/wp-content/uploads/2015/05/janet-lynn-joan-of-arc.jpg" alt="Janet Lynn Roseman">
-			</a>				
-
-			<section class="card--alt">
-				<h2 class="align-center gamma">Janet Lynn Roseman</h2>
-				<p class="zeta">
-					<abbr title="Nova Southeastern University">NSU</abbr> Professor Janet Lynn Roseman, PhD, presents her new book <strong>If Joan of 
-					Arc had Cancer: Finding Courage, Faith, and Healing from History's Most Inspirational Warrior</strong>.
-				</p>
-				<div class="align-center">
-					<a class="button button--default button--small" href="//sherman.library.nova.edu/sites/spotlight/event/edible-prose-host-author-janet-lynn-roseman-phd/">Details</a>
-				</div>
-			</section>
 
 		</article>
 
