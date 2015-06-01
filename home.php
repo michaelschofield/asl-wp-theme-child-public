@@ -52,7 +52,14 @@ body {
 
 </style>
 
-	<!--<section class="alert alert--warning no-margin"></section>-->
+	<section class="alert alert--warning no-margin">
+		<p class="wrap zeta">
+			<strong>Library Systems Upgrade &mdash; June 2nd, 2 - 4 a.m.</strong> | In an effort to serve you better,
+			NSU Libraries will be updating our current system. NovaCat &mdash; our library catalog &mdash; will not be available
+			during this time, including <strong>searching</strong>, viewing or placing <strong>holds</strong>, <strong>renewing</strong> items, and
+			the <strong>Find It!</strong> feature of our database search. Everything else will be available.
+		</p>
+	</section>
 
 	<form action="http://novacat.nova.edu/search/X/" role="form" name="novacat_search" id="novacat_search" method="get" class="background-base has-background form no-margin" role="form">
 		<div class="center-grid clearfix col-md--eightcol" style="padding: 2em 0 1em;">
