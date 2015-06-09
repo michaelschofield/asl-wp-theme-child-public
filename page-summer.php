@@ -54,24 +54,6 @@ body {
 
 <div id="content">
 
-	<div class="background-base has-background hero">
-		<div class="center-grid clearfix col-md--eightcol">
-
-			<p>
-				Our <strong>Summer Reading Rewards Program</strong> is eight (8) whole weeks
-				long, chock-full of events and programs for library-lovers of every age.
-				<a href="http://systems.library.nova.edu/form/view.php?id=74">Register early</a>!
-				You will want to make sure the whole family gets in on the action.
-			</p>
-			
-			<div class="align-right"> 
-				<a class="button zeta green" href="http://systems.library.nova.edu/form/view.php?id=74">Register</a>
-			</div>			
-
-		</div>
-	</div>
-
-
 	<div class="hero--small wrap clearfix">
 		<div class="col-md--sixcol col-lg--fourcol media">
 
