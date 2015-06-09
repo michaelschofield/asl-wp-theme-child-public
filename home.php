@@ -111,21 +111,21 @@ body {
 
 		<article class="col-md--twelvecol col-lg--fourcol media">
 
-			<a class="shadow" href="/summer/">
-				<img src="http://public.library.nova.edu/wp-content/uploads/2015/04/summer-reading.jpg" alt="Summer Programs">
-			</a>
+			<a class="shadow" href="http://public.library.nova.edu/brad-meltzer/">
+				<img src="http://public.library.nova.edu/wp-content/uploads/2015/06/lobe-the-brain.jpg" alt="A child poking a 3D model of the brain">
+			</a>				
 
 			<section class="card--alt">
-				<h2 class="align-center gamma">Early Signup</h2>
+				<h2 class="align-center gamma">Science Kids</h2>
 				<p class="zeta">
-					<strong>Summer is right around the corner</strong>! Get a head start
-					and signup early for our <strong>reading reward program</strong> starting
-					May 11!
+					Hands-on science demonstrations, experiments, which help unleash
+					children's inner mad scientists! Mwuahaha.
 				</p>
 
 				<div class="align-center">
-				<a class="button button--default button--small" href="/summer/">Save the Date</a>
+				<a class="button button--default button--small" href="http://sherman.library.nova.edu/sites/spotlight/series/science-kids/">It's Alive!</a>
 				</div>
+
 			</section>
 
 		</article>
