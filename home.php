@@ -21,18 +21,7 @@ body {
 	padding-top: 1em;
 }
 
-@media only screen and (min-width: 64em ) {
-._col--adjust .col-md--fourcol:not(.col--last) {
-	margin-right: .75em;
-}
-}
-
-@media only screen and (min-width:77.5em) {
-._col--adjust .col-lg--fourcol:not(.col--last) {
-	margin-right: 1.2333em;
-}
-}
-
+  
 .modal header, .modal footer {
 	padding: 0;
 }
@@ -68,67 +57,118 @@ body {
 
 	</form>	
 
-	<section class="clearfix hero--small _col--adjust wrap">
+	<section class="clearfix hero--small wrap">
+
+		<div class="col-md--sixcol col-lg--fourcol">
+			<article class="card--alt card--excerpt">
+				
+				<div class="card__media">
+					<a href="http://sherman.library.nova.edu/sites/spotlight/event/21st-semi-annual-used-book-sale/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', '21st Semi-Annual Book Sale']);">
+						<img src="http://public.library.nova.edu/wp-content/uploads/2015/09/book-sale.jpg" alt="Back to School Bash">
+					</a>					
+				</div>
+
+				<header class="card__header">
+					<a class="link link--undecorated _link-blue" href="http://sherman.library.nova.edu/sites/spotlight/event/21st-semi-annual-used-book-sale/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', '21st Semi-Annual Book Sale']);">
+						<h2 class="delta card__title">Book Sale! <small>(October 28 &mdash; October 31)</small></h2>
+					</a>
+				</header>
+
+				<section class="content">
+					<p>
+						Gently used textbooks, fiction, non-fiction, hardcover, paperbacks, children's books, music, movies, and games! 
+					 <a href="http://sherman.library.nova.edu/sites/spotlight/event/21st-semi-annual-used-book-sale/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', '21st Semi-Annual Book Sale']);">Details.</a></p>					
+				</section>
+
+				<footer class="clearfix">
+
+					<div class="share">
+						<a class="link" onClick="_gaq.push(['_trackEvent', 'Shares', 'Click', 'Facebook']);" href="https://www.facebook.com/sharer/sharer.php?u=http://sherman.library.nova.edu/sites/spotlight/event/21st-semi-annual-used-book-sale/" title="Share on Facebook" target="new"><svg class="svg svg--facebook"><use xlink:href="#icon-facebook"></use></svg></a>
+						<a class="link" onClick="_gaq.push(['_trackEvent', 'Shares', 'Click', 'Twitter']);" href="https://twitter.com/intent/tweet?text=http://sherman.library.nova.edu/sites/spotlight/event/21st-semi-annual-used-book-sale/" title="Share on Twitter" target="new">
+							<svg class="svg svg--twitter"><use xlink:href="#icon-twitter"></use></svg>        
+						</a>
+					</div>
+
+				</footer>      				
+
+			</article>		
+		</div>		
+
+		<div class="col-md--sixcol col-lg--fourcol">
+			
+			<article class="card--alt card--excerpt">
+				<div class="card__media">
+					<a href="http://sherman.library.nova.edu/sites/spotlight/series/hispanic-heritage/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Hispanic Heritage']);">
+						<img src="//public.library.nova.edu/wp-content/uploads/2015/07/hispanic-heritage.jpg" alt="Hispanic Heritage Month">
+					</a>
+				</div>
+
+				<header class="card__header">
+					<a href="http://sherman.library.nova.edu/sites/spotlight/series/hispanic-heritage/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Hispanic Heritage']);" class="link link--undecorated _link-blue">
+						<h2 class="delta card__title">Hispanic Heritage</h2>
+					</a>
+				</header>
+
+				<section class="content">					
+					<p>Our programs celebrating <a href="http://sherman.library.nova.edu/sites/spotlight/series/hispanic-heritage/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Hispanic Heritage']);">Hispanic Heritage Month</a>
+					begin in September. We'll have <a href="http://sherman.library.nova.edu/sites/spotlight/event/diversidad-en-artediversity-art/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Hispanic Heritage']);">a new exhibit</a>,
+					a <a href="http://sherman.library.nova.edu/sites/spotlight/series/cine-argentino/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Hispanic Heritage']);">film series</a>, <a href="http://sherman.library.nova.edu/sites/spotlight/event/paco-moreno-friends-hispanic-heritage-month-concert-children-ages/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Hispanic Heritage']);">concerts for children</a>,
+					and a lot more.</p>
+				</section>
+
+				<footer class="clearfix">
+
+					<div class="share">
+						<a class="link" onClick="_gaq.push(['_trackEvent', 'Shares', 'Click', 'Facebook']);" href="https://www.facebook.com/sharer/sharer.php?u=http://sherman.library.nova.edu/sites/spotlight/series/hispanic-heritage/" title="Share on Facebook" target="new"><svg class="svg svg--facebook"><use xlink:href="#icon-facebook"></use></svg></a>
+						<a class="link" onClick="_gaq.push(['_trackEvent', 'Shares', 'Click', 'Twitter']);" href="https://twitter.com/intent/tweet?text=http://sherman.library.nova.edu/sites/spotlight/series/hispanic-heritage/" title="Share on Twitter" target="new">
+							<svg class="svg svg--twitter"><use xlink:href="#icon-twitter"></use></svg>        
+						</a>
+					</div>
+
+				</footer>      				
+
+			</article>
+
+		</div>
+
+		<div class="col-md--sixcol col-lg--fourcol">
+			<article class="card--alt card--excerpt">
+
+				<div class="card__media">
+					<a href="http://sherman.library.nova.edu/sites/spotlight/databases/oneclickdigital/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'OneClickdigital']);">
+						<img src="http://public.library.nova.edu/wp-content/uploads/2015/07/one-click-digital.jpg" alt="OneClickdigital">
+					</a>				
+				</div>
+
+				<header class="card__header">
+					<a href="http://0-auth.novasoutheastern.org.novacat.nova.edu/go/redirect.php?aid=1202" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'OneClickdigital']);" class="link link--undecorated _link-blue">
+						<h2 class="delta card__title">Audiobooks and E-books</h2>
+					</a>
+				</header>
 		
-		<article class="col-md--sixcol col-lg--fourcol media">
-			<a class="shadow" href="http://public.library.nova.edu/brad-meltzer/">
-				<img src="http://public.library.nova.edu/wp-content/uploads/2015/04/the-presidents-shadow.jpg" alt="Brad Meltzer">
-			</a>				
+				<section class="content">
+					
+					<p>
+						<a href="http://sherman.library.nova.edu/sites/spotlight/databases/oneclickdigital/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'OneClickdigital']);">Download bestsellers</a> to your phone, tablet, or computer using just your
+						library card. 
+					</p>
+					
 
-			<section class="card--alt">
-				<h2 class="align-center gamma">Brad Meltzer</h2>
-				<p class="zeta">
-					<strong>This Father's Day</strong>, spend the afternoon with <a href="#">Brad Meltzer</a> for 
-					the <strong>launch</strong> and signing of his latest novel!
-				</p>
+				</section>	
 
-				<div class="align-center">
-				<a class="button button--default button--small" href="http://public.library.nova.edu/brad-meltzer/">More Info</a>
-				</div>
-			</section>
+				<footer class="clearfix">
 
-		</article>
+					<div class="share">
+						<a class="link" onClick="_gaq.push(['_trackEvent', 'Shares', 'Click', 'Facebook']);" href="https://www.facebook.com/sharer/sharer.php?u=http://sherman.library.nova.edu/sites/spotlight/databases/oneclickdigital/" title="Share on Facebook" target="new"><svg class="svg svg--facebook"><use xlink:href="#icon-facebook"></use></svg></a>
+						<a class="link" onClick="_gaq.push(['_trackEvent', 'Shares', 'Click', 'Twitter']);" href="https://twitter.com/intent/tweet?text=http://sherman.library.nova.edu/sites/spotlight/databases/oneclickdigital/" title="Share on Twitter" target="new">
+							<svg class="svg svg--twitter"><use xlink:href="#icon-twitter"></use></svg>        
+						</a>
+					</div>
 
-		<article class="col-md--sixcol col-lg--fourcol media">
+				</footer>  
 
-			<a class="shadow" href="//sherman.library.nova.edu/sites/spotlight/event/artists-conservations-green-white-blue-exhibit/">
-				<img src="http://public.library.nova.edu/wp-content/uploads/2015/05/artists-for-conservation.jpg" alt="Selections from the de la Cruz Exhibit">
-			</a>
-
-			<section class="card--alt">
-				<h2 class="align-center gamma">Artists for Conservation</h2>
-				<p class="zeta">
-					This <strong>Green, White, and Blue</strong> exhibit represents showcases 
-					many of the world's most recognized and accomplished in the nature art genre.
-				</p>
-
-				<div class="align-center">
-				<a class="button button--default button--small" href="//sherman.library.nova.edu/sites/spotlight/event/artists-conservations-green-white-blue-exhibit/">In the Gallery</a>
-				</div>
-			</section>
-
-		</article>
-
-		<article class="col-md--twelvecol col-lg--fourcol media">
-
-			<a class="shadow" href="http://public.library.nova.edu/brad-meltzer/">
-				<img src="http://public.library.nova.edu/wp-content/uploads/2015/06/lobe-the-brain.jpg" alt="A child poking a 3D model of the brain">
-			</a>				
-
-			<section class="card--alt">
-				<h2 class="align-center gamma">Science Kids</h2>
-				<p class="zeta">
-					Hands-on science demonstrations, experiments, which help unleash
-					children's inner mad scientists! Mwuahaha.
-				</p>
-
-				<div class="align-center">
-				<a class="button button--default button--small" href="http://sherman.library.nova.edu/sites/spotlight/series/science-kids/">It's Alive!</a>
-				</div>
-
-			</section>
-
-		</article>
+			</article>
+		</div>
 
 	</section>
 		
@@ -176,7 +216,7 @@ body {
 				<img src="http://sherman.library.nova.edu/sites/spotlight/files/2015/01/all_devices_541.png" alt="Example of what Flipster looks like in the browser, on  phones, and on tablets." width="541" height="272" class="alignnone size-full wp-image-4275" />
 			</div>
 
-			<div class="col-lg--sixcol col--last">
+			<div class="col-lg--sixcol">
 				<h2 class="gamma">Magazines!</h2>
 				<p class="zeta no-margin">
 					You can now get all of your magazines for free on your phone, your tablet, or in the browser. 
@@ -213,19 +253,19 @@ body {
 
 	</div>
 
-	<div class="col-md--sixcol col-lg--fourcol col--last">
+	<div class="col-md--sixcol col-lg--fourcol">
 
 		<article class="card--alt clearfix" role="article">
 
 				<header>
-					<a href="http://www.nova.edu/library/enews/enews-2015-06-01.html"><b>Monthly Newsletter</b></a>
+					<a href="http://www.nova.edu/library/enews/enews-2015-09-01.html" onClick="_gaq.push(['_trackEvent', 'Newsletters', 'Click', 'E-News']);"><b>Monthly Newsletter</b></a>
 					<h3 class="hide-accessible">E-News</h3>
 				</header>
 
 				<section>
-					<p class="zeta no-margin"><b>June 2015 &mdash;</b> 
-						Summer is here and what better way to kick it off at our Summer Reading Kick-off party? Bring your family for an afternoon of music fun.
-						<a href="http://www.nova.edu/library/enews/enews-2015-06-01.html">See what's happening</a>.
+					<p class="zeta no-margin"><b>September 2015 &mdash;</b> 
+						School has begun and the Library is in full force with it's programming.  September and October offers you the opportunity to enjoy the hispanic culture. 
+						<a href="http://www.nova.edu/library/enews/enews-2015-09-01.html" onClick="_gaq.push(['_trackEvent', 'Newsletters', 'Click', 'E-News']);">See what's happening</a>.
 					</p>
 				</section>
 

@@ -45,7 +45,10 @@
 			<div class="wrap clearfix">
 
 				<a class="nsu" href="//nova.edu/library/main/" title="<?php bloginfo('title'); ?>">
-					<img src="http://sherman.library.nova.edu/cdn/styles/css/brand/logo.png" alt="Alvin Sherman Library, Research, and Information Technology Center">				
+				
+					<img src="//sherman.library.nova.edu/cdn/styles/css/brand/logo.png"
+						alt="Alvin Sherman Library, Research, and Information Technology Center"/>
+
 				</a>
 				
 			</div>				
