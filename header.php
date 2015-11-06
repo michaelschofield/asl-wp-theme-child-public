@@ -80,6 +80,9 @@
 
 					<ul class="menu--actions--public">
 
+
+						<?php if ( !has_nav_menu( 'context-menu' ) ) : ?>
+						
 						<li class="menu--actions--public__menu-item">
 							<a href="//novacat.nova.edu/patroninfo/">My Account</a>
 						</li>
@@ -87,13 +90,24 @@
 						<li class="menu--actions--public__menu-item menu--actions__divider" aria-hidden="true">&nbsp;</li>
 
 						<li class="menu--actions--public__menu-item">
-							<a href="/hours/">Hours</a>
-						</li>						
-
-						<li class="menu--actions--public__menu-item menu--actions__divider" aria-hidden="true">&nbsp;</li>
+							<label class="label" for="top-menu" alt="Search the Library Website" title="Search the Library Website"><svg class="svg svg--search" viewBox="0 0 32 32"><use xlink:href="#icon-search"></use></svg></label>
+						</li>
 
 						<li class="menu--actions--public__menu-item">
 							<label class="label" for="top-menu" alt="Search the Library Website" title="Search the Library Website"><svg class="svg svg--search" viewBox="0 0 32 32"><use xlink:href="#icon-search"></use></svg> </label>
+						</li>						
+
+						<?php else : 
+								wp_nav_menu( array( 
+									'theme_location' => 'context-menu',
+									'container' => false,
+									'items_wrap' => '%3$s',
+									'depth' 	=> 0
+								) ); ?>
+						<?php endif; ?>	
+
+						<li class="menu--actions--public__menu-item menu--actions--public__menu-item button button--primary button--small small-text" style="box-shadow: none;">
+							<a href="//public.library.nova.edu/card">Get a Card</a>
 						</li>
 
 					</ul>						

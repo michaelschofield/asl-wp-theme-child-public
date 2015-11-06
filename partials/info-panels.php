@@ -1,14 +1,14 @@
-			<section id="status" class="align-center hero clearfix">
+			<section id="status" class="align-center clearfix">
 				
 			<!-- Library Hours
 			======================
-			-->	<a class="epsilon panel panel--status status-hours one-fourth" href="<?php echo get_permalink( 15 ); ?>">
+			-->	<a onClick="_gaq.push(['_trackEvent', 'Info Panels', 'Click', 'Hours']);" class="epsilon panel panel--status status-hours one-fourth" href="<?php echo get_permalink( 15 ); ?>">
 					<span class="label">Library Hours</span>
 				</a>
 
 			<!-- Directions
 			======================
-			-->	<a class="epsilon panel panel--status status-directions  one-fourth" href="<?php echo get_permalink( 26 ); ?>">
+			-->	<a onClick="_gaq.push(['_trackEvent', 'Info Panels', 'Click', 'Directions']);" class="epsilon panel panel--status status-directions  one-fourth" href="<?php echo get_permalink( 26 ); ?>">
 					<span class="label">
 						Directions
 					</span>
@@ -16,7 +16,7 @@
 
 			<!-- Contact Us
 			======================
-			--> <a class="epsilon panel panel--status status-contact one-fourth" href="<?php echo get_permalink( 42 ); ?>">
+			--> <a onClick="_gaq.push(['_trackEvent', 'Info Panels', 'Click', 'Contact']);" class="epsilon panel panel--status status-contact one-fourth" href="<?php echo get_permalink( 42 ); ?>">
 					<span class="label">
 						Contact Us
 					</span>
@@ -24,7 +24,7 @@
 
 			<!-- Calendar
 			======================
-			--> <a class="epsilon panel panel--status status-calendar one-fourth" href="<?php echo get_permalink( 149 ); ?>">
+			--> <a onClick="_gaq.push(['_trackEvent', 'Info Panels', 'Click', 'Support']);" class="epsilon panel panel--status status-calendar one-fourth" href="<?php echo get_permalink( 149 ); ?>">
 					<span class="label">
 						Support
 					</span>

@@ -1,10 +1,8 @@
 <?php get_header(); ?>
 
-<style type="text/css">
 
-body {
-	background-color: #f5f5f5;
-}
+
+<style type="text/css">
 
 .no-padding {
 	padding: 0;
@@ -15,12 +13,6 @@ body {
 	right: 0;
 	top: -.5em;
 }
-
-.hero--small {
-	padding-bottom: 1em;
-	padding-top: 1em;
-}
-
   
 .modal header, .modal footer {
 	padding: 0;
@@ -38,6 +30,11 @@ body {
 .modal .modal-close:after {
 	background: #f5f5f5;
 }
+
+.card--excerpt {
+	height: 439px;
+}
+.menu__item{overflow:hidden;padding:0; margin: .35% 0; height: 215px;}.menu__item__content{background-color:white;bottom:0;color:#444;height:61px;left:0;padding:1em;position:absolute;width:100%;-webkit-transition:all .2s ease-out;transition:all .2s ease-out}.menu__item__title{color:#313547;font-size:1.2rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}@media only screen and (min-width: 64em){.menu__item__title{font-size:1.5rem}}.menu__item:hover .menu__item__content,.menu__item:focus .menu__item__content{height:100%}.link--grade{color:#E1E8ED;font-weight:bold}.link--grade--pre{color:#E2624F}.link--grade--e{color:#50afdf}.link--grade--ms{color:#FFAE3D}.link--grade--hs{color:#21AABD}
 
 </style>
 
@@ -57,119 +54,82 @@ body {
 
 	</form>	
 
-	<section class="clearfix hero--small wrap">
+	<section class="clearfix has-cards hero--small">
+
+		<div class="wrap">
 
 		<div class="col-md--sixcol col-lg--fourcol">
-			<article class="card--alt card--excerpt">
-				
+
+			<article class="card card--excerpt">
 				<div class="card__media">
-					<a href="http://sherman.library.nova.edu/sites/spotlight/event/21st-semi-annual-used-book-sale/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', '21st Semi-Annual Book Sale']);">
-						<img src="http://public.library.nova.edu/wp-content/uploads/2015/09/book-sale.jpg" alt="Back to School Bash">
-					</a>					
+					<a href="http://sherman.library.nova.edu/sites/spotlight/event/portrait-warrior-conversation-artist/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Conversation with the Artist']);">
+						<img src="http://public.library.nova.edu/wp-content/uploads/2015/11/portrait-of-a-warrior.jpg">
+					</a>
 				</div>
 
 				<header class="card__header">
-					<a class="link link--undecorated _link-blue" href="http://sherman.library.nova.edu/sites/spotlight/event/21st-semi-annual-used-book-sale/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', '21st Semi-Annual Book Sale']);">
-						<h2 class="delta card__title">Book Sale! <small>(October 28 &mdash; October 31)</small></h2>
+					<a href="http://sherman.library.nova.edu/sites/spotlight/event/portrait-warrior-conversation-artist/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Conversation with the Artist']);" class="link link--undecorated _link-blue">
+						<h2 class="menu__item__title no-margin">Conversation with the Artist</h2>
+						<p class="small-text">Portrait of a Warrior Exhibit</p>
 					</a>
 				</header>
 
-				<section class="content">
+				<section class="content no-margin">					
 					<p>
-						Gently used textbooks, fiction, non-fiction, hardcover, paperbacks, children's books, music, movies, and games! 
-					 <a href="http://sherman.library.nova.edu/sites/spotlight/event/21st-semi-annual-used-book-sale/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', '21st Semi-Annual Book Sale']);">Details.</a></p>					
+						Meet the artist who will discuss her incredible experience painting war veterans.
+					</p>
 				</section>
 
-				<footer class="clearfix">
-
-					<div class="share">
-						<a class="link" onClick="_gaq.push(['_trackEvent', 'Shares', 'Click', 'Facebook']);" href="https://www.facebook.com/sharer/sharer.php?u=http://sherman.library.nova.edu/sites/spotlight/event/21st-semi-annual-used-book-sale/" title="Share on Facebook" target="new"><svg class="svg svg--facebook"><use xlink:href="#icon-facebook"></use></svg></a>
-						<a class="link" onClick="_gaq.push(['_trackEvent', 'Shares', 'Click', 'Twitter']);" href="https://twitter.com/intent/tweet?text=http://sherman.library.nova.edu/sites/spotlight/event/21st-semi-annual-used-book-sale/" title="Share on Twitter" target="new">
-							<svg class="svg svg--twitter"><use xlink:href="#icon-twitter"></use></svg>        
-						</a>
-					</div>
-
-				</footer>      				
-
-			</article>		
+			</article>
 		</div>		
 
 		<div class="col-md--sixcol col-lg--fourcol">
 			
 			<article class="card--alt card--excerpt">
 				<div class="card__media">
-					<a href="http://sherman.library.nova.edu/sites/spotlight/series/hispanic-heritage/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Hispanic Heritage']);">
-						<img src="//public.library.nova.edu/wp-content/uploads/2015/07/hispanic-heritage.jpg" alt="Hispanic Heritage Month">
+					<a href="http://sherman.library.nova.edu/sites/spotlight/event/holiday-survival-eating-healthy-staying-fit/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Holiday Survival']);">
+						<img src="http://public.library.nova.edu/wp-content/uploads/2015/11/holiday-survival.jpg" alt="Hispanic Heritage Month">
 					</a>
 				</div>
 
 				<header class="card__header">
-					<a href="http://sherman.library.nova.edu/sites/spotlight/series/hispanic-heritage/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Hispanic Heritage']);" class="link link--undecorated _link-blue">
-						<h2 class="delta card__title">Hispanic Heritage</h2>
+					<a href="http://sherman.library.nova.edu/sites/spotlight/event/holiday-survival-eating-healthy-staying-fit/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Holiday Survival']);" class="link link--undecorated _link-blue">
+						<h2 class="menu__item__title no-margin">Holiday Survival</h2>
+						<p class="small-text">Baptist Health</p>
 					</a>
 				</header>
 
 				<section class="content">					
-					<p>Our programs celebrating <a href="http://sherman.library.nova.edu/sites/spotlight/series/hispanic-heritage/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Hispanic Heritage']);">Hispanic Heritage Month</a>
-					begin in September. We'll have <a href="http://sherman.library.nova.edu/sites/spotlight/event/diversidad-en-artediversity-art/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Hispanic Heritage']);">a new exhibit</a>,
-					a <a href="http://sherman.library.nova.edu/sites/spotlight/series/cine-argentino/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Hispanic Heritage']);">film series</a>, <a href="http://sherman.library.nova.edu/sites/spotlight/event/paco-moreno-friends-hispanic-heritage-month-concert-children-ages/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Hispanic Heritage']);">concerts for children</a>,
-					and a lot more.</p>
-				</section>
-
-				<footer class="clearfix">
-
-					<div class="share">
-						<a class="link" onClick="_gaq.push(['_trackEvent', 'Shares', 'Click', 'Facebook']);" href="https://www.facebook.com/sharer/sharer.php?u=http://sherman.library.nova.edu/sites/spotlight/series/hispanic-heritage/" title="Share on Facebook" target="new"><svg class="svg svg--facebook"><use xlink:href="#icon-facebook"></use></svg></a>
-						<a class="link" onClick="_gaq.push(['_trackEvent', 'Shares', 'Click', 'Twitter']);" href="https://twitter.com/intent/tweet?text=http://sherman.library.nova.edu/sites/spotlight/series/hispanic-heritage/" title="Share on Twitter" target="new">
-							<svg class="svg svg--twitter"><use xlink:href="#icon-twitter"></use></svg>        
-						</a>
-					</div>
-
-				</footer>      				
+					<p>Gentle chair exercises and sampling of healthy, easy-to-prepare holiday treats.</p>
+				</section>    				
 
 			</article>
 
 		</div>
-
-		<div class="col-md--sixcol col-lg--fourcol">
-			<article class="card--alt card--excerpt">
-
-				<div class="card__media">
-					<a href="http://sherman.library.nova.edu/sites/spotlight/databases/oneclickdigital/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'OneClickdigital']);">
-						<img src="http://public.library.nova.edu/wp-content/uploads/2015/07/one-click-digital.jpg" alt="OneClickdigital">
-					</a>				
-				</div>
-
-				<header class="card__header">
-					<a href="http://0-auth.novasoutheastern.org.novacat.nova.edu/go/redirect.php?aid=1202" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'OneClickdigital']);" class="link link--undecorated _link-blue">
-						<h2 class="delta card__title">Audiobooks and E-books</h2>
-					</a>
-				</header>
 		
-				<section class="content">
-					
-					<p>
-						<a href="http://sherman.library.nova.edu/sites/spotlight/databases/oneclickdigital/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'OneClickdigital']);">Download bestsellers</a> to your phone, tablet, or computer using just your
-						library card. 
-					</p>
-					
+		<a href="http://public.library.nova.edu/flipster" class="col-sm--sixcol col-lg--fourcol card media menu__item" alt="Magazines through Flipster" title="Flipster" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Oprah's Favorite Things (Flipster)']);">
+    		<img src="http://public.library.nova.edu/wp-content/uploads/2015/11/o-magazine.jpg">
+			<span class="menu__item__content">
+				<h3 class="menu__item__title ">Oprah's Favorite Things <small>(Flipster)</small></h3>
+				<span class="zeta">
+					All the magazines are ramping up for a record-busting
+					season. <b>Sign in</b> with just your library card and
+					read them for free.
+				</span>
+			</span>    
+	    </a>
 
-				</section>	
+		<a href="http://sherman.library.nova.edu/sites/spotlight/databases/oneclickdigital/" class="col-sm--sixcol col-lg--fourcol card media menu__item" alt="OneClickdigital" title="OneClickdigital" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Audio and E-Books (OneClick) - The Martian']);">
+    		<img src="http://public.library.nova.edu/wp-content/uploads/2015/11/see-me-cover.jpg" alt="">
+			<span class="menu__item__content">
+				<h3 class="menu__item__title">Audio and E-books <small>(OneClick)</small></h3>
+				<span class="zeta">
+					<b>Download bestsellers</b> like the Nicholas Spark's <b>See Me</b> using any device with your library card.
+				</span>
+			</span>    
+	    </a>
 
-				<footer class="clearfix">
-
-					<div class="share">
-						<a class="link" onClick="_gaq.push(['_trackEvent', 'Shares', 'Click', 'Facebook']);" href="https://www.facebook.com/sharer/sharer.php?u=http://sherman.library.nova.edu/sites/spotlight/databases/oneclickdigital/" title="Share on Facebook" target="new"><svg class="svg svg--facebook"><use xlink:href="#icon-facebook"></use></svg></a>
-						<a class="link" onClick="_gaq.push(['_trackEvent', 'Shares', 'Click', 'Twitter']);" href="https://twitter.com/intent/tweet?text=http://sherman.library.nova.edu/sites/spotlight/databases/oneclickdigital/" title="Share on Twitter" target="new">
-							<svg class="svg svg--twitter"><use xlink:href="#icon-twitter"></use></svg>        
-						</a>
-					</div>
-
-				</footer>  
-
-			</article>
-		</div>
-
+	    </div><!--/.wrap-->
 	</section>
 		
 	
@@ -177,6 +137,7 @@ body {
 
 		<a class="panel one-third compose" href="//sherman.library.nova.edu/sites/spotlight/lists/">
 			<span class="panel__link">What to Read</span>
+			<!--<span class="panel__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>-->
 		</a>
 
 		<a class="panel one-third event" href="//sherman.library.nova.edu/sites/spotlight/events/">
@@ -204,79 +165,81 @@ body {
 
 </nav>
 
-<div class="hero clearfix wrap">
+<?php get_template_part( 'partials/info-panels' ); ?> 
 
-	<div class="col-md--sixcol col-lg--eightcol">
+<div class="has-cards hero">
+	<div class="clearfix wrap">
 
-		<section class="card--alt">
+		<div class="col-md--sixcol col-lg--eightcol">
 
-		<div class="hero clearfix">
+			<section class="card--alt">
 
-			<div class="col-lg--sixcol media">
-				<img src="http://sherman.library.nova.edu/sites/spotlight/files/2015/01/all_devices_541.png" alt="Example of what Flipster looks like in the browser, on  phones, and on tablets." width="541" height="272" class="alignnone size-full wp-image-4275" />
+			<div class="hero clearfix">
+
+				<div class="col-lg--sixcol media">
+					<img src="http://sherman.library.nova.edu/sites/spotlight/files/2015/01/all_devices_541.png" alt="Example of what Flipster looks like in the browser, on  phones, and on tablets." width="541" height="272" class="alignnone size-full wp-image-4275" />
+				</div>
+
+				<div class="col-lg--sixcol">
+					<h2 class="gamma">Magazines!</h2>
+					<p class="zeta no-margin">
+						You can now get all of your magazines for free on your phone, your tablet, or in the browser. 
+					</p>
+					<a class="button button--default button--small" href="http://0-auth.novasoutheastern.org.novacat.nova.edu/go/redirect.php?aid=1360&url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&custid=nsfl&profile=eon">Log In</a>
+						
+				</div>
+
 			</div>
 
-			<div class="col-lg--sixcol">
-				<h2 class="gamma">Magazines!</h2>
-				<p class="zeta no-margin">
-					You can now get all of your magazines for free on your phone, your tablet, or in the browser. 
-				</p>
-				<a class="button button--default button--small" href="http://0-auth.novasoutheastern.org.novacat.nova.edu/go/redirect.php?aid=1360&url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&custid=nsfl&profile=eon">Log In</a>
-					
-			</div>
+			<nav class="media--gallery clearfix" role="navigation">
+				<a href="http://search.ebscohost.com.ezproxylocal.library.nova.edu/login.aspx?direct=true&db=eon&bquery=rolling+stone&cli0=EH1&clv0=Y&type=0&site=eon-live">
+					<img class="col-sm--sixcol col-md--threecol" src="http://sherman.library.nova.edu/images/magazines/rolling-stone.jpg">
+				</a>
+
+				<a href="http://search.ebscohost.com.ezproxylocal.library.nova.edu/login.aspx?direct=true&db=eon&bquery=%26quot%3bTime%26quot%3b&cli0=EH1&clv0=Y&type=0&site=eon-live">
+					<img class="col-sm--sixcol col-md--threecol" src="http://sherman.library.nova.edu/images/magazines/time.jpg">
+				</a>
+
+				<a href="http://search.ebscohost.com.ezproxylocal.library.nova.edu/login.aspx?direct=true&db=eon&bquery=Entertainment+Weekly&cli0=EH1&clv0=Y&type=0&site=eon-live">
+					<img class="col-sm--sixcol col-md--threecol" src="http://sherman.library.nova.edu/images/magazines/entertainment-weekly.jpg">
+				</a>
+
+				<a href="http://search.ebscohost.com.ezproxylocal.library.nova.edu/login.aspx?direct=true&db=eon&bquery=Consumer+Reports&cli0=EH1&clv0=Y&type=0&site=eon-live">
+					<img class="col-sm--sixcol col-md--threecol" src="http://sherman.library.nova.edu/images/magazines/consumer-reports.jpg">
+				</a>
+			</nav>
+
+			<p class="clearfix zeta no-margin">
+				See <a href="http://0-auth.novasoutheastern.org.novacat.nova.edu/go/redirect.php?aid=1360&url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&custid=nsfl&profile=eon">more magazines</a>.
+			</p>
+
+			</section>
 
 		</div>
 
-		<nav class="media--gallery clearfix" role="navigation">
-			<a href="http://search.ebscohost.com.ezproxylocal.library.nova.edu/login.aspx?direct=true&db=eon&bquery=rolling+stone&cli0=EH1&clv0=Y&type=0&site=eon-live">
-				<img class="col-sm--sixcol col-md--threecol" src="http://sherman.library.nova.edu/images/magazines/rolling-stone.jpg">
-			</a>
+		<div class="col-md--sixcol col-lg--fourcol">
 
-			<a href="http://search.ebscohost.com.ezproxylocal.library.nova.edu/login.aspx?direct=true&db=eon&bquery=%26quot%3bTime%26quot%3b&cli0=EH1&clv0=Y&type=0&site=eon-live">
-				<img class="col-sm--sixcol col-md--threecol" src="http://sherman.library.nova.edu/images/magazines/time.jpg">
-			</a>
+			<article class="card--alt clearfix" role="article">
 
-			<a href="http://search.ebscohost.com.ezproxylocal.library.nova.edu/login.aspx?direct=true&db=eon&bquery=Entertainment+Weekly&cli0=EH1&clv0=Y&type=0&site=eon-live">
-				<img class="col-sm--sixcol col-md--threecol" src="http://sherman.library.nova.edu/images/magazines/entertainment-weekly.jpg">
-			</a>
+					<header>
+						<a href="http://www.nova.edu/library/enews/enews-2015-11-01.html" onClick="_gaq.push(['_trackEvent', 'Newsletters', 'Click', 'E-News']);"><b>Monthly Newsletter</b></a>
+						<h3 class="hide-accessible">E-News</h3>
+					</header>
 
-			<a href="http://search.ebscohost.com.ezproxylocal.library.nova.edu/login.aspx?direct=true&db=eon&bquery=Consumer+Reports&cli0=EH1&clv0=Y&type=0&site=eon-live">
-				<img class="col-sm--sixcol col-md--threecol" src="http://sherman.library.nova.edu/images/magazines/consumer-reports.jpg">
-			</a>
-		</nav>
+					<section>
+						<p class="zeta no-margin"><b>November 2015 &mdash;</b> 
+							FThe holidays are right around the corner and we know what that means ... too many occasions to eat!						 
+							<a href="http://www.nova.edu/library/enews/enews-2015-11-01.html" onClick="_gaq.push(['_trackEvent', 'Newsletters', 'Click', 'E-News']);">See what's happening</a>.
+						</p>
+					</section>
 
-		<p class="clearfix zeta no-margin">
-			See <a href="http://0-auth.novasoutheastern.org.novacat.nova.edu/go/redirect.php?aid=1360&url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&custid=nsfl&profile=eon">more magazines</a>.
-		</p>
+			</article>
 
-		</section>
+		</div>
 
 	</div>
+</div><!--/.has-cards-->
 
-	<div class="col-md--sixcol col-lg--fourcol">
-
-		<article class="card--alt clearfix" role="article">
-
-				<header>
-					<a href="http://www.nova.edu/library/enews/enews-2015-09-01.html" onClick="_gaq.push(['_trackEvent', 'Newsletters', 'Click', 'E-News']);"><b>Monthly Newsletter</b></a>
-					<h3 class="hide-accessible">E-News</h3>
-				</header>
-
-				<section>
-					<p class="zeta no-margin"><b>September 2015 &mdash;</b> 
-						School has begun and the Library is in full force with it's programming.  September and October offers you the opportunity to enjoy the hispanic culture. 
-						<a href="http://www.nova.edu/library/enews/enews-2015-09-01.html" onClick="_gaq.push(['_trackEvent', 'Newsletters', 'Click', 'E-News']);">See what's happening</a>.
-					</p>
-				</section>
-
-		</article>
-
-	</div>
-
-</div>
-
-
-<?php get_template_part( 'partials/info-panels' ); ?> 
 
 <section class="modal semantic-content " id="what-am-i-searching" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
 
