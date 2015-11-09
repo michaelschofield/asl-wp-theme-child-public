@@ -2,10 +2,6 @@
 
 <style type="text/css">
 
-body {
-	background-color: #f5f5f5;
-}
-
 .no-padding {
 	padding: 0;
 }
@@ -15,24 +11,7 @@ body {
 	right: 0;
 	top: -.5em;
 }
-
-.hero--small {
-	padding-bottom: 1em;
-	padding-top: 1em;
-}
-
-@media only screen and (min-width: 64em ) {
-._col--adjust .col-md--fourcol:not(.col--last) {
-	margin-right: .75em;
-}
-}
-
-@media only screen and (min-width:77.5em) {
-._col--adjust .col-lg--fourcol:not(.col--last) {
-	margin-right: 1.2333em;
-}
-}
-
+  
 .modal header, .modal footer {
 	padding: 0;
 }
@@ -49,6 +28,11 @@ body {
 .modal .modal-close:after {
 	background: #f5f5f5;
 }
+
+.card--excerpt {
+	height: 439px;
+}
+.menu__item{overflow:hidden;padding:0; margin: .35% 0; height: 215px;}.menu__item__content{background-color:white;bottom:0;color:#444;height:61px;left:0;padding:1em;position:absolute;width:100%;-webkit-transition:all .2s ease-out;transition:all .2s ease-out}.menu__item__title{color:#313547;font-size:1.2rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}@media only screen and (min-width: 64em){.menu__item__title{font-size:1.5rem}}.menu__item:hover .menu__item__content,.menu__item:focus .menu__item__content{height:100%}.link--grade{color:#E1E8ED;font-weight:bold}.link--grade--pre{color:#E2624F}.link--grade--e{color:#50afdf}.link--grade--ms{color:#FFAE3D}.link--grade--hs{color:#21AABD}
 
 </style>
 
@@ -68,122 +52,159 @@ body {
 
 </form>	
 
-<div id="content">
+<div id="content" ng-app="kidsLander">
 
-<section class="clearfix hero--small _col--adjust wrap">
-	
-	<div class="col-md--sixcol col-lg--fourcol media">
+	<section class="clearfix has-cards hero--small">
+		
+		<div class="wrap">
 
-		<a class="panel event" href="http://sherman.library.nova.edu/sites/spotlight/event-type/childrens/" style="width: 100%; margin-bottom: 1em;">
-			<span class="panel__link">Children's Programs</span>
-		</a>
+			<div class="col-lg--fourcol">
 
-		<article role="article">
-			<a class="shadow" href="http://public.library.nova.edu/brad-meltzer/">
-				<img src="http://public.library.nova.edu/wp-content/uploads/2015/06/lobe-the-brain.jpg" alt="A child poking a 3D model of the brain">
-			</a>				
+				<a href="http://sherman.library.nova.edu/sites/spotlight/series/little-minnows-storytime/" class="col-sm--twelvecol col-md--sixcol col-lg--twelvecol card media menu__item" title="Little Minnow's Storytime" onClick="_gaq.push(['_trackEvent', 'Kids Home', 'Click', 'Little Minnows Storytime']);">
+		    		<img src="http://public.library.nova.edu/wp-content/uploads/2015/11/story-time-1.jpg" alt="">
+					<span class="menu__item__content">
 
-			<section class="card--alt">
-				<h2 class="align-center gamma">Science Kids</h2>
-				<p class="zeta">
-					Hands-on science demonstrations, experiments, which help unleash
-					children's inner mad scientists! Mwuahaha.
-				</p>
+						<h3 class="menu__item__title">Little Minnows Storytime <small>(Ages 18 - 36 Months)</small></h3>
 
-				<div class="align-center">
-				<a class="button button--default button--small" href="http://sherman.library.nova.edu/sites/spotlight/series/science-kids/">It's Alive!</a>
-				</div>
+						<span class="zeta">
+							Raise a reader and learn about early literacy skills.
+							Recommended for children 18 - 36 months with their caregivers.
+						</span>
 
-			</section>
-		</article>
-	</div>
+					</span>    
+			    </a>		
 
-	<div class="col-md--sixcol col-lg--eightcol col--last">
-		<?php echo do_shortcode( '[event tax="event_type" slug="childrens" num="4"]');?>
-		<div class="align-right spacer small-text">
-			<a href="http://sherman.library.nova.edu/sites/spotlight/event-type/childrens/">Find more <strong>family-friendly</strong> things to do!</a>
-		</div>
-	</div>
+				<a href="http://sherman.library.nova.edu/sites/spotlight/series/sharkeys-storytime/" class="col-sm--twelvecol col-md--sixcol col-lg--twelvecol card media menu__item" title="Sharkey's Storytime" onClick="_gaq.push(['_trackEvent', 'Kids Home', 'Click', 'Sharkeys Storyime]);">
+		    		<img src="http://public.library.nova.edu/wp-content/uploads/2015/11/sharkey.jpg">
+					<span class="menu__item__content">
+						<h3 class="menu__item__title ">Sharkey's Storytime <small>(Ages 3 - 5)</small></h3>
+						<span class="zeta">
+							Enjoy books, songs, and activities that enhance early
+							literacy skills and explore the world online with kid-friendly
+							websites.
+						</span>
+					</span>    
+			    </a>	
 
+			</div>
 
-</section>
+			<div class="col-lg--fourcol">
 
-<section class="clearfix hero--small wrap">
-	<div class="col-md--sixcol col-lg--fourcol media">
+				<a href="http://sherman.library.nova.edu/sites/spotlight/series/ferro/" class="col-sm--twelvecol col-md--sixcol col-lg--twelvecol card media menu__item" title="Live at the Sherman Library" onClick="_gaq.push(['_trackEvent', 'Kids Home', 'Click', 'Live at the Sherman Library']);">
+		    		<img src="http://public.library.nova.edu/wp-content/uploads/2015/11/live-at-the-sherman-library.jpg">
+					<span class="menu__item__content">
+						<h3 class="menu__item__title ">Live at the Sherman Library</h3>
+						<span class="zeta">
+							Children are invited to explore the excitement of literature
+							through puppetry, theater, music, storytelling, and illustration.
+						</span>
+					</span>    
+			    </a>
 
-		<a class="panel one-third compose" href="//sherman.library.nova.edu/sites/spotlight/lists?for=kids" style="width: 100%; margin-bottom: 1em;">
-			<span class="panel__link">Favorite Books for Kids</span>
-		</a>
+				<a href="http://sherman.library.nova.edu/sites/spotlight/series/wags-and-tales/" class="col-sm--twelvecol col-md--sixcol col-lg--twelvecol card media menu__item" title="Wags and Tales" onClick="_gaq.push(['_trackEvent', 'Kids Home', 'Click', 'Wags and Tales']);">
+		    		<img src="http://public.library.nova.edu/wp-content/uploads/2015/11/wags-and-tales.jpg" alt="">
+					<span class="menu__item__content">
+						<h3 class="menu__item__title">Wags and Tales <small>(Ages 5 - 12)</small></h3>
+						<span class="zeta">
+							This program enables children to read an age-appropriate short story 
+							to an Animal Assisted Therapy Dog in order to make reading fun and boost 
+							confidence. 
+						</span>
+					</span>    
+			    </a>			
 
-		<article role="article">
-			<a class="shadow" href="http://sherman.library.nova.edu/sites/spotlight/list/ordinary-people-change-world/">
-				<img src="http://public.library.nova.edu/wp-content/uploads/2015/06/ordinary-people.jpg" alt="The books of ordinary people change the world series">
-			</a>				
+			</div>
 
-			<section class="card--alt">
-				<h2 class="align-center gamma">Ordinary People Change the World</h2>
-				<p class="zeta">
-					Brad Meltzer‘s Ordinary People Change the World series is a super way to bring American history to life. These books are illustrated by multiple Eisner Award nominee (and Harvey Award winner) Christopher Eliopoulos.
-				</p>
+			<div class="col-lg--fourcol">
 
-				<div class="align-center">
-				<a class="button button--default button--small" href="http://sherman.library.nova.edu/sites/spotlight/list/ordinary-people-change-world/">Check 'em out!</a>
-				</div>
+				<a href="http://sherman.library.nova.edu/sites/spotlight/lists/?for=kids" class="col-sm--twelvecol col-md--sixcol col-lg--twelvecol card media menu__item" title="Book Lists for Kids" onClick="_gaq.push(['_trackEvent', 'Kids Home', 'Click', 'Book Lists for Kids']);">
+		    		<img src="http://sherman.library.nova.edu/sites/spotlight/files/2015/10/ghost-in-the-house-e1444924711767.jpg">
+					<span class="menu__item__content">
+						<h3 class="menu__item__title ">Book Lists for Kids</h3>
+						<span class="zeta">
+							Let us help you find wonderful children's books -
+							curated by us: awesome children's librarians. 
+						</span>
+					</span>    
+			    </a>
 
-			</section>
-		</article>
-	</div>
+				<a href="http://public.library.nova.edu/teachers/" class="col-sm--twelvecol col-md--sixcol col-lg--twelvecol card media menu__item" title="Homework Help" onClick="_gaq.push(['_trackEvent', 'Kids Home', 'Click', 'Teacher Resources']);">
+		    		<img src="http://public.library.nova.edu/teachers/wp-content/uploads/sites/2/2015/09/tr-socialstudies.jpg" alt="">
+					<span class="menu__item__content">
+						<h3 class="menu__item__title">Homework Help <small>(K-12 Resources)</small></h3>
+						<span class="zeta">
+							<b>Download bestsellers</b> like the Nicholas Spark's <b>See Me</b> using any device with your library card.
+						</span>
+					</span>    
+			    </a>			
 
-	<div class="col-md--eightcol col--last">
-		<section class="card--alt clearfix" role="article">
+			</div>
+		</div>		
 
-			<h3>We ♥ lists</h3>
+	</section>
+
+	<div class="clearfix hero wrap" ng-controller="Events">
+		
+		<div class="col-md--sixcol">
+			<h3>What's happening next <small><a class="link link--undecorated" href="http://public.library.nova.edu/events">(Events)</a></small></h3>
 			<p>
-				If librarians could do only one thing, we would make lists of our favorite things. <a href="//sherman.library.nova.edu/sites/spotlight/lists?for=kids">Here are a few</a>
-				that might make it easier for you to find something to read. Everything is hand-picked, curated by
-				the sort of people who know their stuff.
+				Here are a few <a href="http://sherman.library.nova.edu/sites/spotlight/event-type/childrens">children's programs</a> just around the corner. These are 
+				great for the whole family. 
 			</p>
 
-			<article class="clearfix" role="article">
-				<a class="col-md--threecol media shadow" href="http://sherman.library.nova.edu/sites/spotlight/list/may-fourth/">
-					<img src="//www.syndetics.com/index.php?isbn=9780545505178/lc.gif&amp;client=novaseu" srcset="//www.syndetics.com/index.php?isbn=9780545505178/lc.gif&amp;client=novaseu 1024w,
-                 			 //www.syndetics.com/index.php?isbn=9780545505178/mc.gif&amp;client=novaseu 720w,
-                 			 //www.syndetics.com/index.php?isbn=9780545505178/sc.gif&amp;client=novaseu 320w" alt="">
+			<ul class="list list--alternate list--nowrap" ng-cloak>
+				
+				<li ng-repeat="program in programs | orderBy:orderProp | return: 'upcoming-events' | limitTo: 5">
+					<a href="{{ program.url }}" class="link link--undecorated">
+						{{ program.title | clean }}
+					</a> <br>
+					{{ program.custom_fields.event_start[0] | event: 'day' }} 
+					{{ program.custom_fields.event_start_time[0] | event: 'time' }}
+				</li>
+				
+			</ul>
+		</div>
+
+		<div class="col-md--sixcol align-center">
+			<section id="status" class="align-center clearfix">
+				
+			<!-- Library Hours
+			======================
+			-->	<a onClick="_gaq.push(['_trackEvent', 'Info Panels', 'Click', 'Hours']);" class="epsilon panel panel--status status-hours one-half" href="<?php echo get_permalink( 15 ); ?>">
+					<span class="label">Library Hours</span>
 				</a>
 
-				<div class="col-md--ninecol col--last">
-					<header>
-						<h4><a href="http://sherman.library.nova.edu/sites/spotlight/list/may-fourth/">May the fourth be with you!</a></h4>
-					</header>
-					<p>
-						You don’t need to visit a galaxy far, far away to celebrate Star Wars Day on May 4th! 
-						Take your TIE fighter to the NSU Alvin Sherman Library and share your love of Star Wars
-						with the next generation by checking out some of our favorite books, DVDs, video games 
-						and graphic novels for children and teens inspired by Star Wars. 
-					</p>
-				</div>
-			</article>
-
-			<article class="clearfix" role="article">
-				<a class="col-md--threecol media shadow" href="http://sherman.library.nova.edu/sites/spotlight/list/superhero-books-for-young-readers-dc-vs-marvel/">
-					<img src="//www.syndetics.com/index.php?isbn=9780062123985/lc.gif&amp;client=novaseu" srcset="//www.syndetics.com/index.php?isbn=9780062123985/lc.gif&amp;client=novaseu 1024w,
-                        	  //www.syndetics.com/index.php?isbn=9780062123985/mc.gif&amp;client=novaseu 720w,
-                              //www.syndetics.com/index.php?isbn=9780062123985/sc.gif&amp;client=novaseu 320w" alt="">
+			<!-- Directions
+			======================
+			-->	<a onClick="_gaq.push(['_trackEvent', 'Info Panels', 'Click', 'Directions']);" class="epsilon panel panel--status status-directions  one-half" href="<?php echo get_permalink( 26 ); ?>">
+					<span class="label">
+						Directions
+					</span>
 				</a>
 
-				<div class="col-md--ninecol col--last">
-					<header>
-						<h4><a href="http://sherman.library.nova.edu/sites/spotlight/list/superhero-books-for-young-readers-dc-vs-marvel/">Super-hero books for Young Readers: DC vs. Marvel</a></h4>
-					</header>
-					<p>
-						Are you Team Marvel or Team DC? It’s a superhero showdown in the bookshelves at the Alvin Sherman Library! Take home a Spider-Man story, a Batman book, or a collection of stories of your favorite super friends.
-					</p>
-				</div>
-			</article>
+			<!-- Contact Us
+			======================
+			--> <a onClick="_gaq.push(['_trackEvent', 'Info Panels', 'Click', 'Contact']);" class="epsilon panel panel--status status-contact one-half" href="<?php echo get_permalink( 42 ); ?>">
+					<span class="label">
+						Contact Us
+					</span>
+				</a>
 
-		</section>
+			<!-- Calendar
+			======================
+			--> <a onClick="_gaq.push(['_trackEvent', 'Info Panels', 'Click', 'Support']);" class="epsilon panel panel--status status-calendar one-half" href="<?php echo get_permalink( 149 ); ?>">
+					<span class="label">
+						Support
+					</span>
+				</a>
+
+			</section>
+		
+		</div>
+
 	</div>
-</section>
+
+
 
 </div>
 

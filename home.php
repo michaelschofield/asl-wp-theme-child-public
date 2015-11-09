@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-
-
 <style type="text/css">
 
 .no-padding {
@@ -87,20 +85,20 @@
 			
 			<article class="card--alt card--excerpt">
 				<div class="card__media">
-					<a href="http://sherman.library.nova.edu/sites/spotlight/event/holiday-survival-eating-healthy-staying-fit/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Holiday Survival']);">
-						<img src="http://public.library.nova.edu/wp-content/uploads/2015/11/holiday-survival.jpg" alt="Hispanic Heritage Month">
+					<a href="http://sherman.library.nova.edu/sites/spotlight/event/jack-beanstalk-puppet-show/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Jack and the Beanstalk']);">
+						<img src="http://public.library.nova.edu/wp-content/uploads/2015/11/jack.jpg" alt="Jack and the Beanstalk Puppet Show">
 					</a>
 				</div>
 
 				<header class="card__header">
-					<a href="http://sherman.library.nova.edu/sites/spotlight/event/holiday-survival-eating-healthy-staying-fit/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Holiday Survival']);" class="link link--undecorated _link-blue">
-						<h2 class="menu__item__title no-margin">Holiday Survival</h2>
-						<p class="small-text">Baptist Health</p>
+					<a href="http://sherman.library.nova.edu/sites/spotlight/event/jack-beanstalk-puppet-show/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Jack and the Beanstalk']);" class="link link--undecorated _link-blue">
+						<h2 class="menu__item__title no-margin">Jack and the Beanstalk</h2>
+						<p class="small-text">Live at the Sherman Library</p>
 					</a>
 				</header>
 
 				<section class="content">					
-					<p>Gentle chair exercises and sampling of healthy, easy-to-prepare holiday treats.</p>
+					<p>Join Bits N' Pieces Puppet Theatre for this classic story told with Marionettes! </p>					
 				</section>    				
 
 			</article>
@@ -228,7 +226,7 @@
 
 					<section>
 						<p class="zeta no-margin"><b>November 2015 &mdash;</b> 
-							FThe holidays are right around the corner and we know what that means ... too many occasions to eat!						 
+							The holidays are right around the corner and we know what that means ... too many occasions to eat!						 
 							<a href="http://www.nova.edu/library/enews/enews-2015-11-01.html" onClick="_gaq.push(['_trackEvent', 'Newsletters', 'Click', 'E-News']);">See what's happening</a>.
 						</p>
 					</section>
