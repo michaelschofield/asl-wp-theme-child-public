@@ -85,20 +85,20 @@
 			
 			<article class="card--alt card--excerpt">
 				<div class="card__media">
-					<a href="http://sherman.library.nova.edu/sites/spotlight/event/jack-beanstalk-puppet-show/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Jack and the Beanstalk']);">
-						<img src="http://public.library.nova.edu/wp-content/uploads/2015/11/jack.jpg" alt="Jack and the Beanstalk Puppet Show">
+					<a href="http://sherman.library.nova.edu/sites/spotlight/event/magic-toy-box/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'The Magic Toy Box']);">
+						<img src="http://sherman.library.nova.edu/sites/spotlight/files/2015/09/magic-toy-box.jpg" alt="The Magic Toy Box">
 					</a>
 				</div>
 
 				<header class="card__header">
-					<a href="http://sherman.library.nova.edu/sites/spotlight/event/jack-beanstalk-puppet-show/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Jack and the Beanstalk']);" class="link link--undecorated _link-blue">
-						<h2 class="menu__item__title no-margin">Jack and the Beanstalk</h2>
+					<a href="http://sherman.library.nova.edu/sites/spotlight/event/magic-toy-box/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'The Magic Toy Box']);" class="link link--undecorated _link-blue">
+						<h2 class="menu__item__title no-margin">The Magic Toy Shop</h2>
 						<p class="small-text">Live at the Sherman Library</p>
 					</a>
 				</header>
 
 				<section class="content">					
-					<p>Join Bits N' Pieces Puppet Theatre for this classic story told with Marionettes! </p>					
+					<p>Come see Momentum Dance Company in this imaginative story of a magical Toymaker.</p>					
 				</section>    				
 
 			</article>
