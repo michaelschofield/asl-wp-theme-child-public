@@ -197,7 +197,7 @@
 
 				<p>
 					We carry thousands of DVD and Blu-Ray titles from genres like action and adventure,
-					documentaries, dramas, commedies, TV series, language instruction, and everything
+					documentaries, dramas, comedies, TV series, language instruction, and everything
 					inbetween.
 				</p>
 
