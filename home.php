@@ -225,9 +225,9 @@
 					</header>
 
 					<section>
-						<p class="zeta no-margin"><b>November 2015 &mdash;</b> 
+						<p class="zeta no-margin"><b>December 2015 &mdash;</b> 
 							The holidays are right around the corner and we know what that means ... too many occasions to eat!						 
-							<a href="http://www.nova.edu/library/enews/enews-2015-11-01.html" onClick="_gaq.push(['_trackEvent', 'Newsletters', 'Click', 'E-News']);">See what's happening</a>.
+							<a href="http://www.nova.edu/library/enews/enews-2015-12-01.html" onClick="_gaq.push(['_trackEvent', 'Newsletters', 'Click', 'E-News']);">See what's happening</a>.
 						</p>
 					</section>
 
