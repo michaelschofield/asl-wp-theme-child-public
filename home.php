@@ -60,21 +60,21 @@
 
 			<article class="card card--excerpt">
 				<div class="card__media">
-					<a href="http://sherman.library.nova.edu/sites/spotlight/event/portrait-warrior-conversation-artist/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Conversation with the Artist']);">
-						<img src="http://public.library.nova.edu/wp-content/uploads/2015/11/portrait-of-a-warrior.jpg">
+					<a href="http://sherman.library.nova.edu/sites/spotlight/event/new-year-new/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'New Year, New You']);">
+						<img src="http://public.library.nova.edu/wp-content/uploads/2016/01/new-year.jpg">
 					</a>
 				</div>
 
 				<header class="card__header">
-					<a href="http://sherman.library.nova.edu/sites/spotlight/event/portrait-warrior-conversation-artist/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Conversation with the Artist']);" class="link link--undecorated _link-blue">
-						<h2 class="menu__item__title no-margin">Conversation with the Artist</h2>
-						<p class="small-text">Portrait of a Warrior Exhibit</p>
+					<a href="http://sherman.library.nova.edu/sites/spotlight/event/new-year-new/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'New Year, New You']);" class="link link--undecorated _link-blue">
+						<h2 class="menu__item__title no-margin">New Year, New You</h2>
+						<p class="small-text">Baptist Health South Florida</p>
 					</a>
 				</header>
 
 				<section class="content no-margin">					
 					<p>
-						Meet the artist who will discuss her incredible experience painting war veterans.
+						Try Zumba, get free BMI measurements, and hear from a registered dietician.
 					</p>
 				</section>
 
@@ -85,20 +85,20 @@
 			
 			<article class="card--alt card--excerpt">
 				<div class="card__media">
-					<a href="http://sherman.library.nova.edu/sites/spotlight/event/magic-toy-box/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'The Magic Toy Box']);">
-						<img src="http://sherman.library.nova.edu/sites/spotlight/files/2015/09/magic-toy-box.jpg" alt="The Magic Toy Box">
+					<a href="http://sherman.library.nova.edu/sites/spotlight/event/rainbow-circus-shadow-puppetry-workshop/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Rainbow Circus Shadow Puppetry Workshop']);">
+						<img src="http://public.library.nova.edu/wp-content/uploads/2016/01/rainbow-circus.jpg" alt="shadow puppets">
 					</a>
 				</div>
 
 				<header class="card__header">
-					<a href="http://sherman.library.nova.edu/sites/spotlight/event/magic-toy-box/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'The Magic Toy Box']);" class="link link--undecorated _link-blue">
-						<h2 class="menu__item__title no-margin">The Magic Toy Shop</h2>
+					<a href="http://sherman.library.nova.edu/sites/spotlight/event/rainbow-circus-shadow-puppetry-workshop/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Rainbow Circus Shadow Puppetry Workshop']);" class="link link--undecorated _link-blue">
+						<h2 class="menu__item__title no-margin">Rainbow Circus Shadow Puppetry Workshop</h2>
 						<p class="small-text">Live at the Sherman Library</p>
 					</a>
 				</header>
 
 				<section class="content">					
-					<p>Come see Momentum Dance Company in this imaginative story of a magical Toymaker.</p>					
+					<p>Holli Rubin of Bits N' Pieces Puppet Theatre leads this workshop for ages 6 and up!</p>					
 				</section>    				
 
 			</article>
