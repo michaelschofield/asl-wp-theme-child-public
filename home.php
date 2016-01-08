@@ -220,14 +220,14 @@
 			<article class="card--alt clearfix" role="article">
 
 					<header>
-						<a href="http://www.nova.edu/library/enews/enews-2015-11-01.html" onClick="_gaq.push(['_trackEvent', 'Newsletters', 'Click', 'E-News']);"><b>Monthly Newsletter</b></a>
+						<a href="http://sherman.library.nova.edu/sites/newsletter" onClick="_gaq.push(['_trackEvent', 'Newsletters', 'Click', 'E-News']);"><b>Monthly Newsletter</b></a>
 						<h3 class="hide-accessible">E-News</h3>
 					</header>
 
 					<section>
-						<p class="zeta no-margin"><b>December 2015 &mdash;</b> 
-							The holidays are right around the corner and we know what that means ... too many occasions to eat!						 
-							<a href="http://www.nova.edu/library/enews/enews-2015-12-01.html" onClick="_gaq.push(['_trackEvent', 'Newsletters', 'Click', 'E-News']);">See what's happening</a>.
+						<p class="zeta no-margin"><b>January 2016 &mdash;</b> 
+							With the new year comes an opportunity to revise, revamp and revitalize!  And, that's what we did with the Enews! We hope you like the new look. You'll find the same great programs and events, just in a new, cleaner format.  
+							<a href="http://www.nova.edu/library/enews/enews-2016-01T-01.html" onClick="_gaq.push(['_trackEvent', 'Newsletters', 'Click', 'E-News']);">See what's happening</a>.
 						</p>
 					</section>
 
