@@ -1,22 +1,55 @@
 <?php get_header(); ?>
 
-<section class="clearfix has-background-image" style="background: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>) center right; background-size: 50%;">
-	
-	<div class="sixcol first has-background background-base">
+<section class="clearfix has-background background-base">
 
-		<div class="eightcol center-grid hero">
+	<div class="col-md--twelvecol col-lg--sixcol clearfix" style="padding: .5em 1em;">
 
-		<?php if ( get_post_meta( get_the_ID(), 'mission_statement', true ) ) : ?>
-			<?php if ( get_post_meta( get_the_ID(), 'mission_title', true ) ) : ?>
-			<header>
-				<span class="gamma"><?php echo get_post_meta( get_the_ID(), 'mission_title', true); ?></span>
-			</header>
+		<div class="col-md--tencol col--centered hero">
+
+			<?php if ( get_post_meta( get_the_ID(), 'mission_statement', true ) ) : ?>
+				<?php if ( get_post_meta( get_the_ID(), 'mission_title', true ) ) : ?>
+				<header>
+					<span class="gamma"><?php echo get_post_meta( get_the_ID(), 'mission_title', true); ?></span>
+				</header>
+				<?php endif; ?>
+				<p class="epsilon">
+					<?php echo get_post_meta( get_the_ID(), 'mission_statement', true); ?>
+				</p>
 			<?php endif; ?>
-			<p class="epsilon">
-				<?php echo get_post_meta( get_the_ID(), 'mission_statement', true); ?>
-			</p>
-		<?php endif; ?>
 		</div>
+
+	</div>
+
+	<div class="col-md--twelvecol col-lg--sixcol clearfix" style="padding: 0;">
+
+		<div class="col-md--sixcol col-lg--twelvecol has-background" style="background-color: rgba(255,255,255, 0.05); padding: .5em 1em;">
+
+			<div class="hero--small">
+
+				<h3 class="delta no-margin">Broward County Library Cardholders</h3>
+				<p class="small-text no-margin">Use your <b>Broward County Library Card</b> to get <b>immediate</b> access.</p>	
+				<a class="button peach" href="//lib.nova.edu/ecard" title="Get an E-Card">Get an E-Card</a><br>
+				
+				
+			
+			</div>
+		</div>
+
+		<div class="col-md--sixcol col-lg--twelvecol has-background" style="background-color: #4B5971; padding: .5em 1em;">
+
+			<div class="hero--small">
+				<h3 class="delta no-margin">Other Ways to Apply</h3>
+				<p class="small-text no-margin">
+					If you aren't already a Broward County Library Cardholder, 
+					you can apply online and pick up your card in person.
+				</p>
+
+				<a class="button base" href="//novacat.nova.edu/screens/selfregpick.html" title="Online Registration">Apply &amp; Pickup</a>			
+				&nbsp; or <a href="http://public.library.nova.edu/wp-content/uploads/2014/05/Library-Card-Application-7-20-11-English-Spanish-2.pdf" class="button button--link small-text" style="color: white !important; text-decoration: underline;">Print Application</a>
+			</div>
+			
+		</div>
+	
 	</div>
 
 </section>

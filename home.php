@@ -85,20 +85,20 @@
 			
 			<article class="card--alt card--excerpt">
 				<div class="card__media">
-					<a href="http://sherman.library.nova.edu/sites/spotlight/event/rainbow-circus-shadow-puppetry-workshop/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Rainbow Circus Shadow Puppetry Workshop']);">
-						<img src="http://public.library.nova.edu/wp-content/uploads/2016/01/rainbow-circus.jpg" alt="shadow puppets">
+					<a href="http://sherman.library.nova.edu/sites/spotlight/event/dancing-in-your-direction/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Dancing in Your Direction']);">
+						<img src="http://public.library.nova.edu/wp-content/uploads/2016/01/dancing.jpg" alt="A dancer">
 					</a>
 				</div>
 
 				<header class="card__header">
-					<a href="http://sherman.library.nova.edu/sites/spotlight/event/rainbow-circus-shadow-puppetry-workshop/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Rainbow Circus Shadow Puppetry Workshop']);" class="link link--undecorated _link-blue">
-						<h2 class="menu__item__title no-margin">Rainbow Circus Shadow Puppetry Workshop</h2>
+					<a href="http://sherman.library.nova.edu/sites/spotlight/event/dancing-in-your-direction/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Dancing in Your Direction']);" class="link link--undecorated _link-blue">
+						<h2 class="menu__item__title no-margin">Dancing in Your Direction</h2>
 						<p class="small-text">Live at the Sherman Library</p>
 					</a>
 				</header>
 
 				<section class="content">					
-					<p>Holli Rubin of Bits N' Pieces Puppet Theatre leads this workshop for ages 6 and up!</p>					
+					<p>Come see the Moving Currents performers dancing with the help of your imagination!</p>					
 				</section>    				
 
 			</article>

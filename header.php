@@ -1,12 +1,7 @@
 <!doctype html>  
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <!--Google Chrome Frame for IE-->
-
-<!--[if lt IE 7]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><html dir="ltr" lang="en-US" class="no-js ie"><![endif]-->
-<!--[if gt IE 8]><!--> <html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
+<html <?php language_attributes(); ?>><!--<![endif]-->
 	
 	<head>
 	<!-- Metas
@@ -91,11 +86,7 @@
 
 						<li class="menu--actions--public__menu-item">
 							<label class="label" for="top-menu" alt="Search the Library Website" title="Search the Library Website"><svg class="svg svg--search" viewBox="0 0 32 32"><use xlink:href="#icon-search"></use></svg></label>
-						</li>
-
-						<li class="menu--actions--public__menu-item">
-							<label class="label" for="top-menu" alt="Search the Library Website" title="Search the Library Website"><svg class="svg svg--search" viewBox="0 0 32 32"><use xlink:href="#icon-search"></use></svg> </label>
-						</li>						
+						</li>					
 
 						<?php else : 
 								wp_nav_menu( array( 
