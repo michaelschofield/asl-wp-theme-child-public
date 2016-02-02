@@ -60,21 +60,21 @@
 
 			<article class="card card--excerpt">
 				<div class="card__media">
-					<a href="http://sherman.library.nova.edu/sites/spotlight/event/new-year-new/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'New Year, New You']);">
-						<img src="http://public.library.nova.edu/wp-content/uploads/2016/01/new-year.jpg">
+					<a href="http://sherman.library.nova.edu/sites/spotlight/event/tai-chi/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Left Hand of Tai Chi Chuan']);">
+						<img src="http://sherman.library.nova.edu/images/earthsea.jpg">
 					</a>
 				</div>
 
 				<header class="card__header">
-					<a href="http://sherman.library.nova.edu/sites/spotlight/event/new-year-new/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'New Year, New You']);" class="link link--undecorated _link-blue">
-						<h2 class="menu__item__title no-margin">New Year, New You</h2>
-						<p class="small-text">Baptist Health South Florida</p>
+					<a href="http://sherman.library.nova.edu/sites/spotlight/event/new-year-new/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Left Hand of Tai Chi Chuan']);" class="link link--undecorated _link-blue">
+						<h2 class="menu__item__title no-margin">Tai Chi Ch'uan</h2>
+						<p class="small-text">The Left Hand (and Right Foot) of Tai Chi Ch’uan</p>
 					</a>
 				</header>
 
 				<section class="content no-margin">					
 					<p>
-						Try Zumba, get free BMI measurements, and hear from a registered dietician.
+						Try this soft-style martial art and explore the principles of Taoism to enrich your reading of <em>A Wizard of Earthsea</em>. 
 					</p>
 				</section>
 

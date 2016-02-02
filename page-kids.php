@@ -11,7 +11,7 @@
 	right: 0;
 	top: -.5em;
 }
-  
+
 .modal header, .modal footer {
 	padding: 0;
 }
@@ -39,135 +39,138 @@
 <form action="http://novacat.nova.edu/search/X/" role="form" name="novacat_search" id="novacat_search" method="get" class="background-base has-background form no-margin" role="form">
 	<div class="center-grid clearfix col-md--eightcol" style="padding: 2em 0 1em;">
 		<ul>
-			<li class="form__field no-margin">					
+			<li class="form__field no-margin">
 
-				<input class="form__input form__input--transparent form__input--full-width input--large search__search-field--transparent epsilon no-margin" id="SEARCH" name="SEARCH" placeholder="Find the Perfect Story" type="search" required style="border-bottom: 1px solid white;">
-				<input class="button button--small button--transparent form__submit--inside small-text" type="submit" value="<?php echo esc_attr__('Submit') ?>"/>							
+				<input class="form__input form__input--transparent form__input--full-width input--large search__search-field--transparent epsilon no-margin" id="SEARCH" name="SEARCH" placeholder="Search the Library Catalog" type="search" required style="border-bottom: 1px solid white;">
+				<input class="button button--small button--transparent form__submit--inside small-text" type="submit" value="<?php echo esc_attr__('Submit') ?>"/>
 			    <label class="align-right form__label clearfix zeta" for="SEARCH"><span class="hide-accessible">Search the Library Catalog</span> <span class="small-text">( <a href="#what-am-i-searching">What am I searching?</a> )</span></label>
-			    
+
 
 			</li>
 		</ul>
 	</div>
 
-</form>	
+</form>
 
 <div id="content" ng-app="kidsLander">
 
 	<section class="clearfix has-cards hero--small">
-		
+
 		<div class="wrap">
 
 			<div class="col-lg--fourcol">
 
-				<a href="http://sherman.library.nova.edu/sites/spotlight/series/little-minnows-storytime/" class="col-sm--twelvecol col-md--sixcol col-lg--twelvecol card media menu__item" title="Little Minnow's Storytime" onClick="_gaq.push(['_trackEvent', 'Kids Home', 'Click', 'Little Minnows Storytime']);">
-		    		<img src="http://public.library.nova.edu/wp-content/uploads/2015/11/story-time-1.jpg" alt="">
-					<span class="menu__item__content">
-
-						<h3 class="menu__item__title">Little Minnows Storytime <small>(Ages 18 - 36 Months)</small></h3>
-
-						<span class="zeta">
-							Raise a reader and learn about early literacy skills.
-							Recommended for children 18 - 36 months with their caregivers.
-						</span>
-
-					</span>    
-			    </a>		
-
-				<a href="http://sherman.library.nova.edu/sites/spotlight/series/sharkeys-storytime/" class="col-sm--twelvecol col-md--sixcol col-lg--twelvecol card media menu__item" title="Sharkey's Storytime" onClick="_gaq.push(['_trackEvent', 'Kids Home', 'Click', 'Sharkeys Storyime]);">
+				<a href="http://sherman.library.nova.edu/sites/spotlight/series/storytimes/" class="col-sm--twelvecol col-md--sixcol col-lg--twelvecol card media menu__item" title="Storytime" onClick="_gaq.push(['_trackEvent', 'Kids Home', 'Click', 'Storyime]);">
 		    		<img src="http://public.library.nova.edu/wp-content/uploads/2015/11/sharkey.jpg">
 					<span class="menu__item__content">
-						<h3 class="menu__item__title ">Sharkey's Storytime <small>(Ages 3 - 5)</small></h3>
+						<h3 class="menu__item__title ">Storytimes <small>(See All)</small></h3>
 						<span class="zeta">
 							Enjoy books, songs, and activities that enhance early
 							literacy skills and explore the world online with kid-friendly
 							websites.
 						</span>
-					</span>    
-			    </a>	
+					</span>
+			    </a>
+
+
+					<a href="http://sherman.library.nova.edu/sites/spotlight/series/ferro/" class="col-sm--twelvecol col-md--sixcol col-lg--twelvecol card media menu__item" title="Live at the Sherman Library" onClick="_gaq.push(['_trackEvent', 'Kids Home', 'Click', 'Live at the Sherman Library']);">
+			    		<img src="http://public.library.nova.edu/wp-content/uploads/2015/11/live-at-the-sherman-library.jpg">
+						<span class="menu__item__content">
+							<h3 class="menu__item__title ">Live at the Sherman Library</h3>
+							<span class="zeta">
+								Children are invited to explore the excitement of literature
+								through puppetry, theater, music, storytelling, and illustration.
+							</span>
+						</span>
+				    </a>
 
 			</div>
 
 			<div class="col-lg--fourcol">
 
-				<a href="http://sherman.library.nova.edu/sites/spotlight/series/ferro/" class="col-sm--twelvecol col-md--sixcol col-lg--twelvecol card media menu__item" title="Live at the Sherman Library" onClick="_gaq.push(['_trackEvent', 'Kids Home', 'Click', 'Live at the Sherman Library']);">
-		    		<img src="http://public.library.nova.edu/wp-content/uploads/2015/11/live-at-the-sherman-library.jpg">
+				<a href="//sherman.library.nova.edu/sites/spotlight/series/stem/" class="col-sm--twelvecol col-md--sixcol col-lg--twelvecol card media menu__item" onclick="_gaq.push(['_trackEvent', 'Kids Home', 'Click', 'STEM'])">
+					<img src="http://sherman.library.nova.edu/sites/spotlight/files/2016/01/STEM-Spotlight.jpg" alt="Library STEM logo" />
 					<span class="menu__item__content">
-						<h3 class="menu__item__title ">Live at the Sherman Library</h3>
-						<span class="zeta">
-							Children are invited to explore the excitement of literature
-							through puppetry, theater, music, storytelling, and illustration.
-						</span>
-					</span>    
-			    </a>
+						<h3 class="menu__item__title">STEM</h3>
+						<span class="zeta">Science, technology, engineering, and math at the Alvin Sherman Library</span>
+					</span>
+				</a>
 
-				<a href="http://sherman.library.nova.edu/sites/spotlight/series/wags-and-tales/" class="col-sm--twelvecol col-md--sixcol col-lg--twelvecol card media menu__item" title="Wags and Tales" onClick="_gaq.push(['_trackEvent', 'Kids Home', 'Click', 'Wags and Tales']);">
-		    		<img src="http://public.library.nova.edu/wp-content/uploads/2015/11/wags-and-tales.jpg" alt="">
+				<a href="http://sherman.library.nova.edu/auth/index.php?aid=1202&url=http://alvinshermanfl.oneclickdigital.com/#search?search-source=advanced&page-size=60&sort-by=title&sort-order=asc&audience=childrens" class="col-sm--twelvecol col-md--sixcol col-lg--twelvecol card media menu__item" alt="OneClickdigital" title="OneClickdigital" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Audio and E-Books (OneClick) - The Martian']);">
+		    		<img src="http://public.library.nova.edu/wp-content/uploads/2016/02/part-time-indian.jpg" alt="">
 					<span class="menu__item__content">
-						<h3 class="menu__item__title">Wags and Tales <small>(Ages 5 - 12)</small></h3>
+						<h3 class="menu__item__title">Audio and E-books <small>(OneClick)</small></h3>
 						<span class="zeta">
-							This program enables children to read an age-appropriate short story 
-							to an Animal Assisted Therapy Dog in order to make reading fun and boost 
-							confidence. 
+							<b>Download bestsellers</b> like the Sherman Alexie's <b>The Absolutely True Diary of a Part-Time Indian</b> using any device with your library card.
 						</span>
-					</span>    
-			    </a>			
+					</span>
+		    </a>
 
 			</div>
 
 			<div class="col-lg--fourcol">
 
-				<a href="http://sherman.library.nova.edu/sites/spotlight/lists/?for=kids" class="col-sm--twelvecol col-md--sixcol col-lg--twelvecol card media menu__item" title="Book Lists for Kids" onClick="_gaq.push(['_trackEvent', 'Kids Home', 'Click', 'Book Lists for Kids']);">
-		    		<img src="http://sherman.library.nova.edu/sites/spotlight/files/2015/10/ghost-in-the-house-e1444924711767.jpg">
-					<span class="menu__item__content">
-						<h3 class="menu__item__title ">Book Lists for Kids</h3>
-						<span class="zeta">
-							Let us help you find wonderful children's books -
-							curated by us: awesome children's librarians. 
-						</span>
-					</span>    
-			    </a>
+
+			<a href="http://sherman.library.nova.edu/sites/spotlight/lists/?for=kids" class="col-sm--twelvecol col-md--sixcol col-lg--twelvecol card media menu__item" title="Book Lists for Kids" onClick="_gaq.push(['_trackEvent', 'Kids Home', 'Click', 'Book Lists for Kids']);">
+	    		<img src="http://public.library.nova.edu/wp-content/uploads/2016/02/princess-black.jpg">
+				<span class="menu__item__content">
+					<h3 class="menu__item__title ">Book Lists for Kids</h3>
+					<span class="zeta">
+						Let us help you find wonderful children's books -
+						curated by us: awesome children's librarians.
+					</span>
+				</span>
+		    </a>
 
 				<a href="http://public.library.nova.edu/teachers/" class="col-sm--twelvecol col-md--sixcol col-lg--twelvecol card media menu__item" title="Homework Help" onClick="_gaq.push(['_trackEvent', 'Kids Home', 'Click', 'Teacher Resources']);">
 		    		<img src="http://public.library.nova.edu/teachers/wp-content/uploads/sites/2/2015/09/tr-socialstudies.jpg" alt="">
 					<span class="menu__item__content">
 						<h3 class="menu__item__title">Homework Help <small>(K-12 Resources)</small></h3>
 						<span class="zeta">
-							<b>Download bestsellers</b> like the Nicholas Spark's <b>See Me</b> using any device with your library card.
+							A wealth of resources for every grade level, classroom lesson plans for elementary, middle and high school teachers, and even free online practice tests.
 						</span>
-					</span>    
-			    </a>			
+					</span>
+			    </a>
 
 			</div>
-		</div>		
+		</div>
 
 	</section>
 
 	<div class="clearfix hero wrap" ng-controller="Events">
-		
+
 		<div class="col-md--sixcol">
-			<h3>What's happening next <small><a class="link link--undecorated" href="http://public.library.nova.edu/events">(Events)</a></small></h3>
-			<p>
-				Here are a few <a href="http://sherman.library.nova.edu/sites/spotlight/event-type/childrens">children's programs</a> just around the corner. These are 
-				great for the whole family. 
-			</p>
+
+			<div class="clearfix">
+				<div class="col-md--twocol media">
+					<img class="hide-accessible--sm" src="http://sherman.library.nova.edu/cdn/styles/css/public-global/media/event%282x%29.png" alt="" />
+				</div>
+
+				<div class="col-md--tencol">
+					<h3>What's happening next <small><a class="link link--undecorated" href="http://public.library.nova.edu/events">(Events)</a></small></h3>
+					<p>
+						Here are a few <a href="http://sherman.library.nova.edu/sites/spotlight/event-type/childrens">children's programs</a> just around the corner.
+					</p>
+				</div>
+			</div>
 
 			<ul class="list list--alternate list--nowrap" ng-cloak>
-				
+
 				<li ng-repeat="program in programs | orderBy:orderProp | return: 'upcoming-events' | limitTo: 5">
 					<a href="{{ program.url }}" class="link link--undecorated">
 						{{ program.title | clean }}
 					</a> <br>
-					{{ program.custom_fields.event_start[0] | event: 'day' }} 
+					{{ program.custom_fields.event_start[0] | event: 'day' }}
 					{{ program.custom_fields.event_start_time[0] | event: 'time' }}
 				</li>
-				
+
+				<a href="http://public.library.nova.edu/events/">See All Events</a>
 			</ul>
 		</div>
 
 		<div class="col-md--sixcol align-center">
 			<section id="status" class="align-center clearfix">
-				
+
 			<!-- Library Hours
 			======================
 			-->	<a onClick="_gaq.push(['_trackEvent', 'Info Panels', 'Click', 'Hours']);" class="epsilon panel panel--status status-hours one-half" href="<?php echo get_permalink( 15 ); ?>">
@@ -199,7 +202,7 @@
 				</a>
 
 			</section>
-		
+
 		</div>
 
 	</div>
