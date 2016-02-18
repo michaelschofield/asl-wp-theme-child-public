@@ -66,8 +66,7 @@
 						<h3 class="menu__item__title ">Storytimes <small>(See All)</small></h3>
 						<span class="zeta">
 							Enjoy books, songs, and activities that enhance early
-							literacy skills and explore the world online with kid-friendly
-							websites.
+							literacy skills.
 						</span>
 					</span>
 			    </a>
@@ -89,7 +88,7 @@
 			<div class="col-lg--fourcol">
 
 				<a href="//sherman.library.nova.edu/sites/spotlight/series/stem/" class="col-sm--twelvecol col-md--sixcol col-lg--twelvecol card media menu__item" onclick="_gaq.push(['_trackEvent', 'Kids Home', 'Click', 'STEM'])">
-					<img src="http://sherman.library.nova.edu/sites/spotlight/files/2016/01/STEM-Spotlight.jpg" alt="Library STEM logo" />
+					<img src="http://sherman.library.nova.edu/cdn/media/images/stem.jpg" alt="Library STEM logo" />
 					<span class="menu__item__content">
 						<h3 class="menu__item__title">STEM</h3>
 						<span class="zeta">Science, technology, engineering, and math at the Alvin Sherman Library</span>
@@ -97,11 +96,11 @@
 				</a>
 
 				<a href="http://sherman.library.nova.edu/auth/index.php?aid=1202&url=http://alvinshermanfl.oneclickdigital.com/#search?search-source=advanced&page-size=60&sort-by=title&sort-order=asc&audience=childrens" class="col-sm--twelvecol col-md--sixcol col-lg--twelvecol card media menu__item" alt="OneClickdigital" title="OneClickdigital" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Audio and E-Books (OneClick) - The Martian']);">
-		    		<img src="http://public.library.nova.edu/wp-content/uploads/2016/02/part-time-indian.jpg" alt="">
+		    		<img src="http://public.library.nova.edu/wp-content/uploads/2016/02/julian-chapter.jpg" alt="">
 					<span class="menu__item__content">
 						<h3 class="menu__item__title">Audio and E-books <small>(OneClick)</small></h3>
 						<span class="zeta">
-							<b>Download bestsellers</b> like the Sherman Alexie's <b>The Absolutely True Diary of a Part-Time Indian</b> using any device with your library card.
+							<b>Download bestsellers</b> like the R.J. Palacio's <b>The Julian Chapter</b> using any device with your library card.
 						</span>
 					</span>
 		    </a>

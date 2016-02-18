@@ -11,7 +11,7 @@
 	right: 0;
 	top: -.5em;
 }
-  
+
 .modal header, .modal footer {
 	padding: 0;
 }
@@ -39,18 +39,18 @@
 	<form action="http://novacat.nova.edu/search/X/" role="form" name="novacat_search" id="novacat_search" method="get" class="background-base has-background form no-margin" role="form">
 		<div class="center-grid clearfix col-md--eightcol" style="padding: 2em 0 1em;">
 			<ul>
-				<li class="form__field no-margin">					
+				<li class="form__field no-margin">
 
 					<input class="form__input form__input--transparent form__input--full-width input--large search__search-field--transparent epsilon no-margin" id="SEARCH" name="SEARCH" placeholder="Search the Library Catalog" type="search" required style="border-bottom: 1px solid white;">
-					<input class="button button--small button--transparent form__submit--inside small-text" type="submit" value="<?php echo esc_attr__('Submit') ?>"/>							
+					<input class="button button--small button--transparent form__submit--inside small-text" type="submit" value="<?php echo esc_attr__('Submit') ?>"/>
 				    <label class="align-right form__label clearfix zeta" for="SEARCH"><span class="hide-accessible">Search the Library Catalog</span> <span class="small-text">( <a href="#what-am-i-searching">What am I searching?</a> )</span></label>
-				    
+
 
 				</li>
 			</ul>
 		</div>
 
-	</form>	
+	</form>
 
 	<section class="clearfix has-cards hero--small">
 
@@ -60,29 +60,32 @@
 
 			<article class="card card--excerpt">
 				<div class="card__media">
-					<a href="http://sherman.library.nova.edu/sites/spotlight/event/tai-chi/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Left Hand of Tai Chi Chuan']);">
-						<img src="http://sherman.library.nova.edu/images/earthsea.jpg">
+					<a href="http://sherman.library.nova.edu/sites/spotlight/event/seussfest/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Seussfest']);">
+						<img src="http://sherman.library.nova.edu/cdn/media/images/seussfest.jpg">
 					</a>
 				</div>
 
 				<header class="card__header">
-					<a href="http://sherman.library.nova.edu/sites/spotlight/event/new-year-new/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Left Hand of Tai Chi Chuan']);" class="link link--undecorated _link-blue">
-						<h2 class="menu__item__title no-margin">Tai Chi Ch'uan</h2>
-						<p class="small-text">The Left Hand (and Right Foot) of Tai Chi Ch’uan</p>
+					<a href="http://sherman.library.nova.edu/sites/spotlight/event/seussfest/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Seussfest']);" class="link link--undecorated _link-blue">
+						<h2 class="menu__item__title">Seussfest!</h2>
 					</a>
 				</header>
 
-				<section class="content no-margin">					
-					<p>
-						Try this soft-style martial art and explore the principles of Taoism to enrich your reading of <em>A Wizard of Earthsea</em>. 
-					</p>
+				<section class="content no-margin">
+					<p class="no-margin">
+						Your library card is your free ticket this year to our annual day filled with music, magic,and more. </p>
 				</section>
 
+				<footer class="align-right card__footer">
+					<a href="http://sherman.library.nova.edu/sites/spotlight/event/seussfest/" target="_self" class="button button--flat button--small button--default small-text no-margin">Details</a>
+					<a data-ng-if="ac.info" href="http://sherman.library.nova.edu/sites/spotlight/event/seussfest/#rsvp" target="_self" class="button button--flat button--small green small-text no-margin">RSVP</a>
+				</footer>
+
 			</article>
-		</div>		
+		</div>
 
 		<div class="col-md--sixcol col-lg--fourcol">
-			
+
 			<article class="card--alt card--excerpt">
 				<div class="card__media">
 					<a href="http://sherman.library.nova.edu/sites/spotlight/event/dancing-in-your-direction/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Dancing in Your Direction']);">
@@ -97,14 +100,14 @@
 					</a>
 				</header>
 
-				<section class="content">					
-					<p>Come see the Moving Currents performers dancing with the help of your imagination!</p>					
-				</section>    				
+				<section class="content">
+					<p>Come see the Moving Currents performers dancing with the help of your imagination!</p>
+				</section>
 
 			</article>
 
 		</div>
-		
+
 		<a href="http://public.library.nova.edu/flipster" class="col-sm--sixcol col-lg--fourcol card media menu__item" alt="Magazines through Flipster" title="Flipster" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Oprah's Favorite Things (Flipster)']);">
     		<img src="http://public.library.nova.edu/wp-content/uploads/2015/11/o-magazine.jpg">
 			<span class="menu__item__content">
@@ -114,7 +117,7 @@
 					season. <b>Sign in</b> with just your library card and
 					read them for free.
 				</span>
-			</span>    
+			</span>
 	    </a>
 
 		<a href="http://sherman.library.nova.edu/sites/spotlight/databases/oneclickdigital/" class="col-sm--sixcol col-lg--fourcol card media menu__item" alt="OneClickdigital" title="OneClickdigital" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Audio and E-Books (OneClick) - The Martian']);">
@@ -124,13 +127,13 @@
 				<span class="zeta">
 					<b>Download bestsellers</b> like the Nicholas Spark's <b>See Me</b> using any device with your library card.
 				</span>
-			</span>    
+			</span>
 	    </a>
 
 	    </div><!--/.wrap-->
 	</section>
-		
-	
+
+
 	<nav id="panels" class="clearfix menu--panels" role="navigation">
 
 		<a class="panel one-third compose" href="//sherman.library.nova.edu/sites/spotlight/lists/">
@@ -163,7 +166,39 @@
 
 </nav>
 
-<?php get_template_part( 'partials/info-panels' ); ?> 
+<?php get_template_part( 'partials/info-panels' ); ?>
+
+<form class="clearfix form" action="http://systems.library.nova.edu/form/view.php?id=26" method="post" role="form" style="border-top: 1px solid #ddd;">
+
+	<div class="col-md--tencol col--centered hero">
+
+		<h2 class="gamma">Sign up for our newsletter</h2>
+		<p>
+				<a href="http://sherman.library.nova.edu/sites/newsletter/">E-News</a> &mdash; our monthly newsletter &mdash; is the <strong>best</strong> way to hear about
+			upcoming events, awesome new services, and special opportunities.
+		</p>
+
+		<ul class="no-margin">
+			<li class="form__field">
+				<label class="form__label hide-accessible" for="element_2">
+					Email Address
+				</label>
+				<input style="border-bottom: 1px solid #313547; border-radius: 0;" id="element_2" class="form__input input--transparent form__input--full-width" type="email" name="element_2" placeholder="your@email.com"/>
+			</li>
+
+			<li class="form__field no-margin">
+				<input class="button button--primary--alt zeta " id="saveForm" type="submit" value="Submit" name="submit" /> <br>
+				&nbsp;<a href="http://sherman.library.nova.edu/sites/newsletter/" class="link link--undecorated">Past Issues</a>
+			</li>
+
+			<input type="hidden" value="26" name="form_id" />
+			<input type="hidden" value="2" name="submit" />
+
+		</ul>
+
+	</div>
+
+</form>
 
 <div class="has-cards hero">
 	<div class="clearfix wrap">
@@ -181,10 +216,10 @@
 				<div class="col-lg--sixcol">
 					<h2 class="gamma">Magazines!</h2>
 					<p class="zeta no-margin">
-						You can now get all of your magazines for free on your phone, your tablet, or in the browser. 
+						You can now get all of your magazines for free on your phone, your tablet, or in the browser.
 					</p>
 					<a class="button button--default button--small" href="http://0-auth.novasoutheastern.org.novacat.nova.edu/go/redirect.php?aid=1360&url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&custid=nsfl&profile=eon">Log In</a>
-						
+
 				</div>
 
 			</div>
@@ -225,9 +260,9 @@
 					</header>
 
 					<section>
-						<p class="zeta no-margin"><b>January 2016 &mdash;</b> 
-							With the new year comes an opportunity to revise, revamp and revitalize!  And, that's what we did with the Enews! We hope you like the new look. You'll find the same great programs and events, just in a new, cleaner format.  
-							<a href="http://www.nova.edu/library/enews/enews-2016-01T-01.html" onClick="_gaq.push(['_trackEvent', 'Newsletters', 'Click', 'E-News']);">See what's happening</a>.
+						<p class="zeta no-margin"><b>February 2016 &mdash;</b>
+							Now that the new year has begun, we are busy this February bringing you a plethora of events and programs celebrating Black History month. We encourage you as always to take advantage of these amazing opportunities for fun and learning.  Our goal has always been to ensure every child and adult has access to rich, cultural programming for FREE!
+							<a href="http://www.nova.edu/library/enews/enews-2016-02-01.html" onClick="_gaq.push(['_trackEvent', 'Newsletters', 'Click', 'E-News']);">See what's happening</a>.
 						</p>
 					</section>
 
