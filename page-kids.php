@@ -146,10 +146,7 @@
 				</div>
 
 				<div class="col-md--tencol">
-					<h3>What's happening next <small><a class="link link--undecorated" href="http://public.library.nova.edu/events">(Events)</a></small></h3>
-					<p>
-						Here are a few <a href="http://sherman.library.nova.edu/sites/spotlight/event-type/childrens">children's programs</a> just around the corner.
-					</p>
+					<h3 style="position: relative; top: 1em;">What's happening next <small><a class="link link--undecorated" href="http://public.library.nova.edu/events">(Events)</a></small></h3>
 				</div>
 			</div>
 

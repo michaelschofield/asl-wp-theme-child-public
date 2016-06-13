@@ -26,8 +26,8 @@ kidsLander.controller( 'Databases', [ '$scope', '$http',
       .success( function( data ) {
         $scope.databases = data.databases;
         $scope.subjects = data.subjects;
-      }); 
-  
+      });
+
 
   }
 ]);
@@ -35,21 +35,21 @@ kidsLander.controller( 'Databases', [ '$scope', '$http',
 /**
  * Events controller
  */
-kidsLander.controller( 'Events', [ '$scope', '$http', 
+kidsLander.controller( 'Events', [ '$scope', '$http',
   function( $scope, $http ) {
 
   /**
    * Fetch all "Children's" events using
-   * the spotlight api. 
+   * the spotlight api.
    */
     $http
       .jsonp( 'http://sherman.library.nova.edu/sites/spotlight/api/taxonomy/get_taxonomy_posts/?taxonomy=event_type&slug=childrens&post_type=spotlight_events&custom_fields=scheduling_options,event_start,event_start_time&orderby=event_start&count=50&callback=JSON_CALLBACK' )
       .success( function( data ) {
 
-        $scope.programs = data.posts;  
-        
+        $scope.programs = data.posts;
+
       });
-   
+
 
   /**
    * Identify an order property.
@@ -73,7 +73,7 @@ kidsLander.filter( 'event', function( $filter ) {
 
     if ( format == 'day' ) {
 
-      // Given a string YYYYMMDD, substringify this 
+      // Given a string YYYYMMDD, substringify this
       // pass it through Date(), and appliy angular's
       // native date filter to render something like "September 5".
 
@@ -81,9 +81,9 @@ kidsLander.filter( 'event', function( $filter ) {
         month   = input.substring( 4, 6 ),
         day   = input.substring( 6, 8 );
 
-      var _date = $filter( 'date' )( new Date( year, month - 1, day ), 'MMMM d' );  
-      return input ? _date : '';  
-    } 
+      var _date = $filter( 'date' )( new Date( year, month - 1, day ), 'MMMM d' );
+      return input ? _date : '';
+    }
 
     else {
       return input;
@@ -106,7 +106,7 @@ kidsLander.filter( 'clean', function( $filter ) {
       .replace(/&#8217;/g, "'")
 
       // emdash
-      .replace(/&#8211;/g, "–");    
+      .replace(/&#8211;/g, "–");
 
 
     }
@@ -136,9 +136,13 @@ kidsLander.filter( 'return', function() {
           month   = date.substring( 4, 6 ),
           day   = date.substring( 6, 8 ),
           today   = new Date();
+          today.setHours(0);
+          today.setMinutes(0);
+          today.setSeconds(0);
+          today.setMilliseconds(0);
 
         date = new Date(year, month - 1, day );
-        
+
         if ( date >= today ) {
           result.push( event );
         }
