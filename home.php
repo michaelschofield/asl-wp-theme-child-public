@@ -32,6 +32,10 @@
 .card--excerpt {
 	height: 439px;
 }
+
+[class^="col-"] {
+	margin-bottom: 1em;
+}
 .menu__item{overflow:hidden;padding:0; margin: .35% 0; height: 215px;}.menu__item__content{background-color:white;bottom:0;color:#444;height:61px;left:0;padding:1em;position:absolute;width:100%;-webkit-transition:all .2s ease-out;transition:all .2s ease-out}.menu__item__title{color:#313547;font-size:1.2rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}@media only screen and (min-width: 64em){.menu__item__title{font-size:1.5rem}}.menu__item:hover .menu__item__content,.menu__item:focus .menu__item__content{height:100%}.link--grade{color:#E1E8ED;font-weight:bold}.link--grade--pre{color:#E2624F}.link--grade--e{color:#50afdf}.link--grade--ms{color:#FFAE3D}.link--grade--hs{color:#21AABD}
 
 </style>
@@ -52,75 +56,58 @@
 
 	</form>
 
-	<section class="clearfix has-cards hero--small">
+	<section class="clearfix has-cards hero--small" ng-app="publicServices">
 
-		<div class="wrap">
+		<div class="wrap" ng-controller="AdController as adc">
 
-		<div class="col-md--sixcol col-lg--fourcol">
+			<div class="col-md--twelvecol col-lg--eightcol" style="align-items: center; display: flex; justify-content: center; height: 439px;" ng-if=!adc.ads>
+				<blockquote>
+					<p>“She sounds like someone who spends a lot of time in libraries, which are the best sorts of people.”</p>
+					<cite>Catherynne M. Valente</cite>
+				</blockquote>
+			</div>
 
-			<article class="card card--excerpt">
-				<div class="card__media">
-					<a href="http://sherman.library.nova.edu/sites/spotlight/event/seussfest/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Seussfest']);">
-						<img src="http://sherman.library.nova.edu/cdn/media/images/seussfest.jpg">
-					</a>
+			<div data-ng-repeat="ad in adc.ads | limitTo : 2">
+
+				<div class="col-md--sixcol col-lg--fourcol">
+
+					<article class="card card--excerpt">
+						<div class="card__media">
+							<a ng-href="{{ ad.link }}">
+								<img ng-src="{{ad.media}}">
+							</a>
+						</div>
+
+						<header class="card__header">
+							<a ng-href="{{ ad.link }}" class="link link--undecorated _link-blue">
+								<h2 class="menu__item__title">{{ ad.title }}</h2>
+							</a>
+						</header>
+
+						<section class="content no-margin">
+							{{ ad.excerpt }}
+						</section>
+
+					</article>
+
 				</div>
 
-				<header class="card__header">
-					<a href="http://sherman.library.nova.edu/sites/spotlight/event/seussfest/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Seussfest']);" class="link link--undecorated _link-blue">
-						<h2 class="menu__item__title">Seussfest!</h2>
-					</a>
-				</header>
+			</div>
 
-				<section class="content no-margin">
-					<p class="no-margin">
-						Your library card is your free ticket this year to our annual day filled with music, magic,and more. </p>
-				</section>
-
-				<footer class="align-right card__footer">
-					<a href="http://sherman.library.nova.edu/sites/spotlight/event/seussfest/" target="_self" class="button button--flat button--small button--default small-text no-margin">Details</a>
-					<a data-ng-if="ac.info" href="http://sherman.library.nova.edu/sites/spotlight/event/seussfest/#rsvp" target="_self" class="button button--flat button--small green small-text no-margin">RSVP</a>
-				</footer>
-
-			</article>
-		</div>
-
-		<div class="col-md--sixcol col-lg--fourcol">
-
-			<article class="card--alt card--excerpt">
-				<div class="card__media">
-					<a href="http://sherman.library.nova.edu/sites/spotlight/event/dancing-in-your-direction/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Dancing in Your Direction']);">
-						<img src="http://public.library.nova.edu/wp-content/uploads/2016/01/dancing.jpg" alt="A dancer">
-					</a>
-				</div>
-
-				<header class="card__header">
-					<a href="http://sherman.library.nova.edu/sites/spotlight/event/dancing-in-your-direction/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Dancing in Your Direction']);" class="link link--undecorated _link-blue">
-						<h2 class="menu__item__title no-margin">Dancing in Your Direction</h2>
-						<p class="small-text">Live at the Sherman Library</p>
-					</a>
-				</header>
-
-				<section class="content">
-					<p>Come see the Moving Currents performers dancing with the help of your imagination!</p>
-				</section>
-
-			</article>
-
-		</div>
-
-		<a href="http://public.library.nova.edu/flipster" class="col-sm--sixcol col-lg--fourcol card media menu__item" alt="Magazines through Flipster" title="Flipster" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Oprah's Favorite Things (Flipster)']);">
-    		<img src="http://public.library.nova.edu/wp-content/uploads/2015/11/o-magazine.jpg">
-			<span class="menu__item__content">
-				<h3 class="menu__item__title ">Oprah's Favorite Things <small>(Flipster)</small></h3>
-				<span class="zeta">
-					All the magazines are ramping up for a record-busting
-					season. <b>Sign in</b> with just your library card and
-					read them for free.
+			<a class="col-sm--twelvecol col-md--sixcol col-lg--fourcol card media menu__item" alt="Magazines through Flipster" data-ng-cloak title="Flipster" href="http://sherman.library.nova.edu/auth/index.php?aid=1250&url=http://web.b.ebscohost.com/eon/results?sid=ee9edc8b-94d4-4ef1-ad56-c70e10e92f29@sessionmgr114&vid=1&hid=109&bquery=Organic Life&bdata=JmRiPWVvbiZjbGkwPUVIMSZjbHYwPVkmdHlwZT0wJnNpdGU9ZW9uLWxpdmU=" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Yum (Organic Life)']);">
+					<img src="//sherman.library.nova.edu/cdn/media/images/features/organic-life.jpg">
+				<span class="menu__item__content">
+					<h3 class="menu__item__title">
+						Yum! <small>(Organic Life on Flipster)</small>
+					</h3>
+					<span class="zeta">
+						<b>Sign in</b> with just your library card and
+						read them for free.
+					</span>
 				</span>
-			</span>
-	    </a>
+			</a>
 
-		<a href="http://sherman.library.nova.edu/sites/spotlight/databases/oneclickdigital/" class="col-sm--sixcol col-lg--fourcol card media menu__item" alt="OneClickdigital" title="OneClickdigital" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Audio and E-Books (OneClick) - The Martian']);">
+		<a class="col-sm--twelvecol col-md--sixcol col-lg--fourcol card media menu__item" alt="OneClickdigital" data-ng-cloak title="OneClickdigital" href="http://sherman.library.nova.edu/sites/spotlight/databases/oneclickdigital/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Audio and E-Books (OneClick) - The Martian']);">
     		<img src="http://public.library.nova.edu/wp-content/uploads/2015/11/see-me-cover.jpg" alt="">
 			<span class="menu__item__content">
 				<h3 class="menu__item__title">Audio and E-books <small>(OneClick)</small></h3>
@@ -167,38 +154,6 @@
 </nav>
 
 <?php get_template_part( 'partials/info-panels' ); ?>
-
-<form class="clearfix form" action="http://systems.library.nova.edu/form/view.php?id=26" method="post" role="form" style="border-top: 1px solid #ddd;">
-
-	<div class="col-md--tencol col--centered hero">
-
-		<h2 class="gamma">Sign up for our newsletter</h2>
-		<p>
-				<a href="http://sherman.library.nova.edu/sites/newsletter/">E-News</a> &mdash; our monthly newsletter &mdash; is the <strong>best</strong> way to hear about
-			upcoming events, awesome new services, and special opportunities.
-		</p>
-
-		<ul class="no-margin">
-			<li class="form__field">
-				<label class="form__label hide-accessible" for="element_2">
-					Email Address
-				</label>
-				<input style="border-bottom: 1px solid #313547; border-radius: 0;" id="element_2" class="form__input input--transparent form__input--full-width" type="email" name="element_2" placeholder="your@email.com"/>
-			</li>
-
-			<li class="form__field no-margin">
-				<input class="button button--primary--alt zeta " id="saveForm" type="submit" value="Submit" name="submit" /> <br>
-				&nbsp;<a href="http://sherman.library.nova.edu/sites/newsletter/" class="link link--undecorated">Past Issues</a>
-			</li>
-
-			<input type="hidden" value="26" name="form_id" />
-			<input type="hidden" value="2" name="submit" />
-
-		</ul>
-
-	</div>
-
-</form>
 
 <div class="has-cards hero">
 	<div class="clearfix wrap">
@@ -252,21 +207,34 @@
 
 		<div class="col-md--sixcol col-lg--fourcol">
 
-			<article class="card--alt clearfix" role="article">
+			<form class="card form no-margin" action="http://systems.library.nova.edu/form/view.php?id=26" method="post" role="form" style="border-left: 3px solid #e2624f; box-shadow: none;">
 
-					<header>
-						<a href="http://sherman.library.nova.edu/sites/newsletter" onClick="_gaq.push(['_trackEvent', 'Newsletters', 'Click', 'E-News']);"><b>Monthly Newsletter</b></a>
-						<h3 class="hide-accessible">E-News</h3>
-					</header>
+					<h2 class="delta" style="color: #e2624f;">Newsletter</h2>
 
-					<section>
-						<p class="zeta no-margin"><b>February 2016 &mdash;</b>
-							Now that the new year has begun, we are busy this February bringing you a plethora of events and programs celebrating Black History month. We encourage you as always to take advantage of these amazing opportunities for fun and learning.  Our goal has always been to ensure every child and adult has access to rich, cultural programming for FREE!
-							<a href="http://www.nova.edu/library/enews/enews-2016-02-01.html" onClick="_gaq.push(['_trackEvent', 'Newsletters', 'Click', 'E-News']);">See what's happening</a>.
-						</p>
-					</section>
+					<p>
+						Our newsletter is the <strong>best</strong> way to hear about
+						upcoming events, awesome new services, and special opportunities.
+					</p>
 
-			</article>
+					<ul class="no-margin">
+						<li class="align-right form__field">
+							<label class="form__label hide-accessible" for="element_2">
+								Email Address
+							</label>
+							<input style="border-bottom: 1px solid #313547; border-radius: 0;" id="element_2" class="form__input input--transparent form__input--full-width" type="email" name="element_2" placeholder="your@email.com"/>
+							<a href="http://sherman.library.nova.edu/sites/newsletter/" class="link link--undecorated small-text">Read this month's issue.</a>
+						</li>
+
+						<li class="form__field no-margin">
+							<input class="button button--flat coral zeta " id="saveForm" type="submit" value="Sign up" name="submit" />
+						</li>
+
+						<input type="hidden" value="26" name="form_id" />
+						<input type="hidden" value="2" name="submit" />
+
+					</ul>
+
+			</form>
 
 		</div>
 
