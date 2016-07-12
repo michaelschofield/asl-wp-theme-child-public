@@ -27,11 +27,11 @@
 			<div class="hero--small">
 
 				<h3 class="delta no-margin">Broward County Library Cardholders</h3>
-				<p class="small-text no-margin">Use your <b>Broward County Library Card</b> to get <b>immediate</b> access.</p>	
+				<p class="small-text no-margin">Use your <b>Broward County Library Card</b> to get <b>immediate</b> access using our e-card.</p>
 				<a class="button peach" href="//lib.nova.edu/ecard" title="Get an E-Card">Get an E-Card</a><br>
-				
-				
-			
+
+
+
 			</div>
 		</div>
 
@@ -40,55 +40,54 @@
 			<div class="hero--small">
 				<h3 class="delta no-margin">Other Ways to Apply</h3>
 				<p class="small-text no-margin">
-					If you aren't already a Broward County Library Cardholder, 
-					you can apply online and pick up your card in person.
+					If you don’t have a Broward County Library card, you can apply online for our Alvin Sherman Library Card and pick up your card in person. 					
 				</p>
 
-				<a class="button base" href="//novacat.nova.edu/screens/selfregpick.html" title="Online Registration">Apply &amp; Pickup</a>			
+				<a class="button base" href="//novacat.nova.edu/screens/selfregpick.html" title="Online Registration">Apply &amp; Pickup</a>
 				&nbsp; or <a href="http://public.library.nova.edu/wp-content/uploads/2014/05/Library-Card-Application-7-20-11-English-Spanish-2.pdf" class="button button--link small-text" style="color: white !important; text-decoration: underline;">Print Application</a>
 			</div>
-			
+
 		</div>
-	
+
 	</div>
 
 </section>
 
 	<div id="content">
-	
-		<div id="inner-content" class="wrap clearfix">	
+
+		<div id="inner-content" class="wrap clearfix">
 
 		    <main id="main" class="eightcol center-grid clearfix" role="main">
 
 		    	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			    <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-				
+
 				    <header class="article-header">
 						<h1 class="page-title hide-accessible" itemprop="headline">
 							<?php the_title(); ?>
 						</h1>
 				    </header> <!-- end article header -->
-			
+
 				    <section class="post-content clearfix" itemprop="articleBody">
 					    <?php the_content(); ?>
 					</section> <!-- end article section -->
-				
+
 				    <footer class="article-footer wrap clearfix">
-	
+
 					    <?php the_tags('<p class="tags"><span class="tags-title">Tags:</span> ', ', ', '</p>'); ?>
-						
+
 				    </footer> <!-- end article footer -->
-			
+
 			    </article> <!-- end article -->
-			    <?php endwhile; ?>	
-			
+			    <?php endwhile; ?>
+
 			</main> <!-- end #main -->
 
 		</div> <!-- end #inner-content -->
 
-	</div> <!-- end #content -->	
+	</div> <!-- end #content -->
 
-					
-		<?php endif; ?>	
+
+		<?php endif; ?>
 
 <?php get_footer(); ?>

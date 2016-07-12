@@ -73,13 +73,13 @@
 
 					<article class="card card--excerpt">
 						<div class="card__media">
-							<a ng-href="{{ ad.link }}">
+							<a ng-href="{{ ad.link }}?utm_source=pls&utm_medium=card&utm_campaign=ad-manager">
 								<img ng-src="{{ad.media}}">
 							</a>
 						</div>
 
 						<header class="card__header">
-							<a ng-href="{{ ad.link }}" class="link link--undecorated _link-blue">
+							<a ng-href="{{ ad.link }}?utm_source=pls&utm_medium=card&utm_campaign=ad-manager" class="link link--undecorated _link-blue">
 								<h2 class="menu__item__title">{{ ad.title }}</h2>
 							</a>
 						</header>
