@@ -37,7 +37,7 @@
 </style>
 
 <form action="http://novacat.nova.edu/search/X/" role="form" name="novacat_search" id="novacat_search" method="get" class="background-base has-background form no-margin" role="form">
-	<div class="center-grid clearfix col-md--eightcol" style="padding: 2em 0 1em;">
+	<div class="col--centered clearfix col-md--eightcol" style="padding: 2em 0 1em;">
 		<ul>
 			<li class="form__field no-margin">
 

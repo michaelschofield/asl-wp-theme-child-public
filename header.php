@@ -25,6 +25,28 @@
 	======================
 	-->	<?php wp_head(); ?>
 
+	<script>
+		// loadCSS
+		!function(e){"use strict";e.loadCSS=function(t,n,r){var i,l=e.document,o=l.createElement("link");if(n)i=n;else{var a=(l.body||l.getElementsByTagName("head")[0]).childNodes;i=a[a.length-1]}var s=l.styleSheets;o.rel="stylesheet",o.href=t,o.media="only x",i.parentNode.insertBefore(o,n?i:i.nextSibling);var f=function(e){for(var t=o.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){f(e)})};return o.onloadcssdefined=f,f(function(){o.media=r||"all"}),o}}(this);
+		loadCSS( 'http://sherman.library.nova.edu/cdn/styles/css/public-global/uncritical.css' );
+		loadCSS( 'http://sherman.library.nova.edu/cdn/styles/css/public-global/s--pls.css' );
+	</script>
+
+	<noscript>
+		<link rel="stylesheet" href="http://sherman.library.nova.edu/cdn/styles/css/public-global/uncritical.css">
+	</noscript>
+
+	<style>
+		.svg.svg--activity { float: left; width: 24px; margin-right: .5em;}
+		.menu__item{overflow:hidden;padding:0; margin: .35% 0; height: 215px;}.menu__item__content{background-color:white;bottom:0;color:#444;height:61px;left:0;padding:1em;position:absolute;width:100%;-webkit-transition:all .2s ease-out;transition:all .2s ease-out}.menu__item__title{color:#313547;font-size:1.2rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}@media only screen and (min-width: 64em){.menu__item__title{font-size:1.5rem}}.menu__item:hover .menu__item__content,.menu__item:focus .menu__item__content{height:100%}.link--grade{color:#E1E8ED;font-weight:bold}.link--grade--pre{color:#E2624F}.link--grade--e{color:#50afdf}.link--grade--ms{color:#FFAE3D}.link--grade--hs{color:#21AABD}
+		[ng\:cloak],[ng-cloak],.ng-cloak,[data-ng\:cloak],[data-ng-cloak],.data-ng-cloak,.empty, .login-error{display:none !important}
+		.empty {display: none};
+		.not-empty{};
+		.overlayContainer { display: none;}
+		.overlayBackground { top:0px; left:0px; padding-left:100px;position:absolute;z-index:1000;height:100%;width:100%;background-color:#808080;opacity:0.3;}
+		.overlayContent { position:absolute; border: 1px solid #000; background-color:#fff;font-weight: bold;height: 100px;width: 300px;z-index:1000;text-align:center;}
+	</style>
+
 	</head>
 
 	<body <?php body_class(); ?>>
@@ -34,22 +56,36 @@
 
 	<a class="hide-accessible" href="#content">Skip to Content</a>
 
-		<div id="container">
+		<div id="container" ng-app="publicServices">
 
-		<div class="menu universal <?php echo ( is_page() ? ( is_page( 'kids' ) || get_query_var( 'for' ) === 'kids' ? 'kids' : 'tinsley-gradient' ) : 'tinsley-gradient' ); ?> " <?php echo ( is_page( 'kids' ) ? 'style="background-image: none;"' : '' ); ?>>
-			<div class="wrap clearfix">
+			<div class="menu menu--banner universal tinsley-gradient">
+          <div class="wrap clearfix">
 
-				<a class="nsu" href="//nova.edu/library/main/" title="<?php bloginfo('title'); ?>">
+            <a class="link" href="http://www.nova.edu/" title="Nova Southeastern University">
+              <picture class="logo logo--nsu">
+                <source media="(max-width: 617px)" srcset="//sherman.library.nova.edu/cdn/media/images/logos/nsu-small.png" alt="Alvin Sherman Library, Research, and Information Technology Center">
+                <img
+                  alt="Alvin Sherman Library, Research, and Information Technology Center"
+                  srcset="//sherman.library.nova.edu/cdn/media/images/logos/nsu.png"
+                  data-src="//sherman.library.nova.edu/cdn/media/images/logos/nsu.png">
+              </picture>
+            </a>
 
-					<img src="//sherman.library.nova.edu/cdn/styles/css/brand/logo.png"
-						alt="Alvin Sherman Library, Research, and Information Technology Center"/>
+              <a href="//sherman.library.nova.edu" title="Home - Alvin Sherman Library">
+                <picture class="logo logo--asl">
+                  <source media="(min-width: 618px)" srcset="//sherman.library.nova.edu/cdn/media/images/logos/sherman-library.png" alt="Alvin Sherman Library, Research, and Information Technology Center">
+                  <img
+                    alt="Alvin Sherman Library, Research, and Information Technology Center"
+                    srcset="//sherman.library.nova.edu/cdn/media/images/logos/sherman-library.png"
+                    data-src="//sherman.library.nova.edu/cdn/media/images/logos/sherman-library.png">
+                </picture>
+              </a>
 
-				</a>
+          </div>
+      </div><!--/.universal-->
 
-			</div>
-		</div><!--/.universal-->
-
-		<input type="checkbox" id="top-menu" class="checkbox-toggle" />
+		<input type="checkbox" class="checkbox-toggle" id="top-menu" aria-describedby="top-menu-toggle-description">
+		<span class="hide-accessible" id="top-menu-toggle-description">Checking this box will open the top menu</span>
 
 		<!-- Header
 		======================
@@ -57,48 +93,24 @@
 
 				<div id="inner-header" class="wrap clearfix">
 
-					<div class="pill-menu">
+					<label class="label label--hamburger" for="top-menu" title="Open the Menu"   onclick="ga( 'send', 'event', 'Context Menu', 'click', 'Hamburger' );">
+						<svg class="svg svg--menu" fill="#000000" height="32" viewBox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 0h24v24H0z" fill="none"/>
+								<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+						</svg>
+						<span>Menu</span>
+					</label>
 
-						<ul>
-							<li class="has-subnav primary">
-								<label class="label" for="top-menu" title="Open the Menu">
-									<svg class="svg svg--menu" viewBox="0 0 32 32"><use xlink:href="#icon-menu"></use></svg>
-									<span class="hide-accessible">Menu</span>
-								</label>
-							</li>
-							<li class="pill-menu__title">
-								<a href="<?php echo bloginfo('url'); ?>">Public Library Services</a> <?php echo ( !is_home() ? '&mdash; ' . get_the_title() : '' ); ?>
-							</li>
-						</ul>
+					<span class="pill-menu__title"><a class="link link--undecorated" href="//public.library.nova.edu/" alt="Public Homepage - Alvin Sherman Library"> Public Library Services</a> <?php if ( !is_home() ) { echo '&mdash; '; } asl_wp_theme_site_title(); ?></span>
 
-					</div>
-
-					<ul class="menu--actions--public">
-
-
-						<?php if ( !has_nav_menu( 'context-menu' ) ) : ?>
+					<ul class="menu--actions--public menu--actions--context">
 
 						<li class="menu--actions--public__menu-item">
-							<a href="//novacat.nova.edu/patroninfo/">My Account</a>
+							<a class="link link--undecorated" href="//novacat.nova.edu/patroninfo/">My Account</a>
 						</li>
 
-						<li class="menu--actions--public__menu-item menu--actions__divider" aria-hidden="true">&nbsp;</li>
-
-						<li class="menu--actions--public__menu-item">
-							<label class="label" for="top-menu" alt="Search the Library Website" title="Search the Library Website"><svg class="svg svg--search" viewBox="0 0 32 32"><use xlink:href="#icon-search"></use></svg></label>
-						</li>
-
-						<?php else :
-								wp_nav_menu( array(
-									'theme_location' => 'context-menu',
-									'container' => false,
-									'items_wrap' => '%3$s',
-									'depth' 	=> 0
-								) ); ?>
-						<?php endif; ?>
-
-						<li class="menu--actions--public__menu-item menu--actions--public__menu-item button button--primary button--small small-text" style="box-shadow: none;">
-							<a href="//public.library.nova.edu/card">Get a Card</a>
+						<li class="menu--actions--public__menu-item no-padding">
+							<a class="button button--small small-text button--primary" href="//public.library.nova.edu/card">Get a Card</a>
 						</li>
 
 					</ul>

@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
 <section class="clearfix has-background-image" style="background: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>) center right; background-size: 50%;">
-	
-	<div class="sixcol first has-background background-base">
 
-		<div class="eightcol center-grid hero">
+	<div class="col-md--sixcol has-background background-base">
+
+		<div class="col-md--tencol col--centered clearfix hero">
 
 		<?php if ( get_post_meta( get_the_ID(), 'mission_statement', true ) ) : ?>
 			<?php if ( get_post_meta( get_the_ID(), 'mission_title', true ) ) : ?>
@@ -22,7 +22,7 @@
 </section>
 
 <nav id="panels"class="menu--panels clearfix" role="navigation">
-	
+
 	<a class="panel one-third genealogy" href="http://sherman.library.nova.edu/e-library/index.php?action=subject&col=n&cat=gee" title="Genealogy Resources">
 		<span class="panel__link">Genealogy</span>
 	</a>
@@ -62,7 +62,7 @@
 		<span class="panel__link">All Databases</span>
 	</a>
 
-	
+
 </nav>
 
 

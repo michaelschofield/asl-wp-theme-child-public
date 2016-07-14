@@ -41,7 +41,7 @@
 </style>
 
 	<form action="http://novacat.nova.edu/search/X/" role="form" name="novacat_search" id="novacat_search" method="get" class="background-base has-background form no-margin" role="form">
-		<div class="center-grid clearfix col-md--eightcol" style="padding: 2em 0 1em;">
+		<div class="col-md--eightcol col--centered clearfix" style="padding: 2em 0 1em;">
 			<ul>
 				<li class="form__field no-margin">
 
@@ -56,7 +56,7 @@
 
 	</form>
 
-	<section class="clearfix has-cards hero--small" ng-app="publicServices">
+	<section class="clearfix has-cards hero--small">
 
 		<div class="wrap" ng-controller="AdController as adc">
 
@@ -67,9 +67,9 @@
 				</blockquote>
 			</div>
 
-			<div data-ng-repeat="ad in adc.ads | limitTo : 2">
+			<span data-ng-repeat="ad in adc.ads | limitTo : 4">
 
-				<div class="col-md--sixcol col-lg--fourcol">
+				<div data-ng-if="$index < 2" class="col-md--sixcol col-lg--fourcol">
 
 					<article class="card card--excerpt">
 						<div class="card__media">
@@ -92,30 +92,46 @@
 
 				</div>
 
-			</div>
-
-			<a class="col-sm--twelvecol col-md--sixcol col-lg--fourcol card media menu__item" alt="Magazines through Flipster" data-ng-cloak title="Flipster" href="http://sherman.library.nova.edu/auth/index.php?aid=1250&url=http://web.b.ebscohost.com/eon/results?sid=ee9edc8b-94d4-4ef1-ad56-c70e10e92f29@sessionmgr114&vid=1&hid=109&bquery=Organic Life&bdata=JmRiPWVvbiZjbGkwPUVIMSZjbHYwPVkmdHlwZT0wJnNpdGU9ZW9uLWxpdmU=" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Yum (Organic Life)']);">
-					<img src="//sherman.library.nova.edu/cdn/media/images/features/organic-life.jpg">
-				<span class="menu__item__content">
-					<h3 class="menu__item__title">
-						Yum! <small>(Organic Life on Flipster)</small>
-					</h3>
-					<span class="zeta">
-						<b>Sign in</b> with just your library card and
-						read them for free.
+				<a data-ng-if="$index >= 2" class="col-sm--twelvecol col-md--sixcol col-lg--fourcol card media menu__item" ng-href="{{ ad.link }}?utm_source=pls&utm_medium=card&utm_campaign=ad-manager">
+						<img ng-src="{{ad.media}}">
+					<span class="menu__item__content">
+						<h2 class="menu__item__title">
+							{{ ad.title }}
+						</h2>
+						<span class="zeta">
+							{{ ad.excerpt }}
+						</span>
 					</span>
-				</span>
-			</a>
+				</a>
 
-		<a class="col-sm--twelvecol col-md--sixcol col-lg--fourcol card media menu__item" alt="OneClickdigital" data-ng-cloak title="OneClickdigital" href="http://sherman.library.nova.edu/sites/spotlight/databases/oneclickdigital/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Audio and E-Books (OneClick) - The Martian']);">
-    		<img src="http://public.library.nova.edu/wp-content/uploads/2015/11/see-me-cover.jpg" alt="">
-			<span class="menu__item__content">
-				<h3 class="menu__item__title">Audio and E-books <small>(OneClick)</small></h3>
-				<span class="zeta">
-					<b>Download bestsellers</b> like the Nicholas Spark's <b>See Me</b> using any device with your library card.
-				</span>
 			</span>
-	    </a>
+
+			<span data-ng-if="adc.ads.length < 4">
+				<a class="col-sm--twelvecol col-md--sixcol col-lg--fourcol card media menu__item" alt="Magazines through Flipster" data-ng-cloak title="Flipster" ng-href="http://sherman.library.nova.edu/auth/index.php?aid=1250&url=http://web.b.ebscohost.com/eon/results?sid=ee9edc8b-94d4-4ef1-ad56-c70e10e92f29@sessionmgr114&vid=1&hid=109&bquery=Organic Life&bdata=JmRiPWVvbiZjbGkwPUVIMSZjbHYwPVkmdHlwZT0wJnNpdGU9ZW9uLWxpdmU=" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Yum (Organic Life)']);">
+						<img src="//sherman.library.nova.edu/cdn/media/images/features/organic-life.jpg">
+					<span class="menu__item__content">
+						<h3 class="menu__item__title">
+							Yum! <small>(Organic Life on Flipster)</small>
+						</h3>
+						<span class="zeta">
+							<b>Sign in</b> with just your library card and
+							read them for free.
+						</span>
+					</span>
+				</a>
+			</span>
+
+			<span data-ng-if="adc.ads.length < 3">
+				<a class="col-sm--twelvecol col-md--sixcol col-lg--fourcol card media menu__item" alt="OneClickdigital" data-ng-cloak title="OneClickdigital" href="http://sherman.library.nova.edu/sites/spotlight/databases/oneclickdigital/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Audio and E-Books (OneClick) - The Martian']);">
+						<img src="http://public.library.nova.edu/wp-content/uploads/2015/11/see-me-cover.jpg" alt="">
+					<span class="menu__item__content">
+						<h3 class="menu__item__title">Audio and E-books <small>(OneClick)</small></h3>
+						<span class="zeta">
+							<b>Download bestsellers</b> like the Nicholas Spark's <b>See Me</b> using any device with your library card.
+						</span>
+					</span>
+				</a>
+			</span>
 
 	    </div><!--/.wrap-->
 	</section>
