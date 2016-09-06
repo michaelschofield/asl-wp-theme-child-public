@@ -26,7 +26,6 @@
 	-->	<?php wp_head(); ?>
 
 	<script>
-		// loadCSS
 		!function(e){"use strict";e.loadCSS=function(t,n,r){var i,l=e.document,o=l.createElement("link");if(n)i=n;else{var a=(l.body||l.getElementsByTagName("head")[0]).childNodes;i=a[a.length-1]}var s=l.styleSheets;o.rel="stylesheet",o.href=t,o.media="only x",i.parentNode.insertBefore(o,n?i:i.nextSibling);var f=function(e){for(var t=o.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){f(e)})};return o.onloadcssdefined=f,f(function(){o.media=r||"all"}),o}}(this);
 		loadCSS( 'http://sherman.library.nova.edu/cdn/styles/css/public-global/uncritical.css' );
 		loadCSS( 'http://sherman.library.nova.edu/cdn/styles/css/public-global/s--pls.css' );
@@ -105,13 +104,63 @@
 
 					<ul class="menu--actions--public menu--actions--context">
 
-						<li class="menu--actions--public__menu-item">
-							<a class="link link--undecorated" href="//novacat.nova.edu/patroninfo/">My Account</a>
-						</li>
+            <?php if(!isset($_SESSION[AUTH]['user'])) : ?>
+              <li data-ng-if="!ac.info" class="menu--actions--public__menu-item no-padding" ng-cloak>
+                <a class="button button--small small-text button--primary" href="https://sherman.library.nova.edu/auth/index.php?sites_url=http://public.library.nova.edu">Log In</a>
+               </li>
 
-						<li class="menu--actions--public__menu-item no-padding">
-							<a class="button button--small small-text button--primary" href="//public.library.nova.edu/card">Get a Card</a>
-						</li>
+              <li data-ng-if="!ac.info" class="menu--actions--public__menu-item" ng-cloak>
+                <a class="button button--small small-text button--link" href="//public.library.nova.edu/card">Get a Card</a>
+              </li>
+             <?php endif; ?>
+
+            <li data-ng-if="ac.info" class="menu--actions--public__menu-item menu" ng-cloak>
+
+                <button class="button button--link link--drop-down" href="top" for="user-menu" data-ng-click="userMenu.toggle()">
+
+                     <svg class="svg svg--user" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                         <path d="M0 0h24v24H0z" fill="none"/>
+                     </svg>
+
+                    <span class="hide-accessible">Account</span>
+
+                </button>
+
+                <div class="menu__sub-menu" data-ng-class="{ 'menu__sub-menu--open' : userMenuToggle }">
+
+                    <section ng-if="ac.activity.fees" class="alert alert--warning no-margin">
+                        <p class="align-center small-text no-margin">
+                            You have <a target="_self" href="/fees/">{{ac.activity.fees}} {{ac.activity.feeNumber}} ({{ac.activity.balance}})</a>
+                        </p>
+                    </section>
+
+                    <section class="menu__sub-menu__content" ng-if="ac.activity">
+                      <h4 class="zeta" style="margin-bottom: .25em;">
+                        {{ac.info.display_name}} <br>
+                        <span class="small-text" ng-if="ac.info.email">{{ac.info.email}} <br></span>
+                      </h4>
+                            <p class="small-text no-margin" ng-if="ac.activity.checkouts">You have <a ng-href="//sherman.library.nova.edu/account/checkouts">{{ac.activity.checkouts}} {{ac.activity.checkoutNumber}}</a> checked out.</p>
+                            <p class="small-text no-margin" ng-if="ac.activity.holds">You have <a ng-href="//sherman.library.nova.edu/account/holds">{{ac.activity.holds}} {{ac.activity.holdNumber}}</a> on hold.</p>
+                    </section>
+
+                    <section class="menu__sub-menu__content" ng-if="!ac.activity">
+                        Welcome back, {{ac.info.display_name}}!
+                    </section>
+
+                    <footer class="clearfix menu__sub-menu__footer" ng-cloak>
+
+                        <div class="col-sm--sixcol">
+                            <a ng-href="//sherman.library.nova.edu/account"  class="button button--flat button--small button--primary small-text" style="color: white;" onclick="ga( 'send', 'event', 'Context Menu', 'click', 'My Account' );">My Account</a>
+                        </div>
+
+                        <div class="col-sm--sixcol align-right">
+                            <a href="https://sherman.library.nova.edu/auth/logout.php" class="button button--flat button--small button--default small-text" onclick="ga( 'send', 'event', 'Context Menu', 'click', 'Log Out' );">Log Out</a>
+                        </div>
+                    </footer>
+                </div>
+
+            </li>
 
 					</ul>
 
