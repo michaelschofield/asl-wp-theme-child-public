@@ -2,24 +2,29 @@
 
 	<section class="clearfix has-background-image" style="background: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>) center center;">
 
-		<div class="sixcol first has-background background-base">
+		<div class="col-md--sixcol has-background background-base">
 
-			<div class="eightcol center-grid hero">
+      <div class="col-md--tencol col--centered">
 
-			<?php if ( get_post_meta( get_the_ID(), 'mission_statement', true ) ) : ?>
-				<?php if ( get_post_meta( get_the_ID(), 'mission_title', true ) ) : ?>
-				<header>
-					<span class="gamma"><?php echo get_post_meta( get_the_ID(), 'mission_title', true); ?></span>
-				</header>
-				<?php endif; ?>
-				<p class="epsilon">
-					<?php echo get_post_meta( get_the_ID(), 'mission_statement', true); ?>
-				</p>
-			<?php endif; ?>
+        <div class="col-md--eightcol col-md--centered hero">
 
-				<a class="button button--primary--alt" href="http://sherman.library.nova.edu/sites/ask-a-librarian/">Ask a Librarian</a>
+  			<?php if ( get_post_meta( get_the_ID(), 'mission_statement', true ) ) : ?>
+  				<?php if ( get_post_meta( get_the_ID(), 'mission_title', true ) ) : ?>
+  				<header>
+  					<span class="gamma"><?php echo get_post_meta( get_the_ID(), 'mission_title', true); ?></span>
+  				</header>
+  				<?php endif; ?>
+  				<p class="epsilon">
+  					<?php echo get_post_meta( get_the_ID(), 'mission_statement', true); ?>
+  				</p>
+  			<?php endif; ?>
 
-			</div>
+  				<a class="button button--primary--alt" href="http://sherman.library.nova.edu/sites/ask-a-librarian/">Ask a Librarian</a>
+
+  			</div>
+
+      </div>
+
 		</div>
 
 	</section>
@@ -32,7 +37,7 @@
 
 			<div id="inner-content" class="hero wrap clearfix">
 
-				    <div id="main" class="eightcol center-grid hero clearfix" role="main">
+				    <div id="main" class="col-md--eightcol col-md--centered hero clearfix" role="main">
 
 				    	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					    <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
