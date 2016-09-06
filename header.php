@@ -1,7 +1,7 @@
 <!doctype html>
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <!--Google Chrome Frame for IE-->
-<html <?php language_attributes(); ?>><!--<![endif]-->
+<html <?php language_attributes(); ?> ng-app="publicServices"><!--<![endif]-->
 
 	<head>
 	<!-- Metas
@@ -49,14 +49,14 @@
 
 	</head>
 
-	<body <?php body_class(); ?>>
+	<body <?php body_class(); ?> ng-controller="ApplicationController as ac">
 
 	<?php get_template_part( 'partials/svg-icons' ); ?>
 	<?php get_template_part( 'partials/alerts' ); ?>
 
 	<a class="hide-accessible" href="#content">Skip to Content</a>
 
-		<div id="container" ng-app="publicServices">
+		<div id="container">
 
 			<div class="menu menu--banner universal tinsley-gradient">
           <div class="wrap clearfix">
