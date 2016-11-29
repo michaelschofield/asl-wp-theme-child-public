@@ -36,23 +36,39 @@
 
 </style>
 
-<form action="http://novacat.nova.edu/search/X/" role="form" name="novacat_search" id="novacat_search" method="get" class="background-base has-background form no-margin" role="form">
-	<div class="col--centered clearfix col-md--eightcol" style="padding: 2em 0 1em;">
-		<ul>
-			<li class="form__field no-margin">
+<div id="content">
 
-				<input class="form__input form__input--transparent form__input--full-width input--large search__search-field--transparent epsilon no-margin" id="SEARCH" name="SEARCH" placeholder="Search the Library Catalog" type="search" required style="border-bottom: 1px solid white;">
-				<input class="button button--small button--transparent form__submit--inside small-text" type="submit" value="<?php echo esc_attr__('Submit') ?>"/>
-			    <label class="align-right form__label clearfix zeta" for="SEARCH"><span class="hide-accessible">Search the Library Catalog</span> <span class="small-text">( <a href="#what-am-i-searching">What am I searching?</a> )</span></label>
+  <article class="ad ad--hero ad--transparent card clearfix no-margin" style="background-color: #fa394a;">
 
+    <div class="clearfix wrap">
+      <div class="col-md--sixcol align-center ad__media">
+        <a href="http://sherman.library.nova.edu/sites/spotlight/lists/?for=kids&utm_source=publib&utm_medium=banner&utm_campaign=teen-movie-club">
+          <img src="//sherman.library.nova.edu/cdn/media/images/ads/chu.png" alt="Across the Universe" />
+        </a>
+      </div>
 
-			</li>
-		</ul>
-	</div>
+      <div class="col-md--sixcol">
 
-</form>
+        <div class="col-md--tencol col--centered ad__copy">
 
-<div id="content" ng-app="kidsLander">
+          <header class="card__header">
+            <a class="link link--undecorated _link--blue" href="http://sherman.library.nova.edu/sites/spotlight/lists/?for=kids&utm_source=publib&utm_medium=banner&utm_campaign=teen-movie-club">
+              <h2 class="menu__item__title" style="color: white;">Our Picks</h2>
+            </a>
+          </header>
+
+          <section class="no-margin">
+            <p class="epsilon" style="color: white;">
+              We make lists to make it easier for you to find something to read! They're hand-picked
+              by the sort of people who know their books :).
+            </p>
+          </section>
+
+          </div>
+      </div>
+
+      </div>
+    </article>
 
 	<section class="clearfix has-cards hero--small">
 
@@ -136,7 +152,7 @@
 
 	</section>
 
-	<div class="clearfix hero wrap" ng-controller="Events">
+	<div class="clearfix hero wrap" data-ng-controller="EventController as ec" data-audience="kids">
 
 		<div class="col-md--sixcol">
 
@@ -150,18 +166,27 @@
 				</div>
 			</div>
 
-			<ul class="list list--alternate list--nowrap" ng-cloak>
+      <article data-ng-repeat="event in ec.events" class="card clearfix">
+        <span class="card__color-code card__color-code--kids"></span>
+        <header class="card__header" style="margin-bottom: .5em;">
+          <a ng-href="{{ event.url }}" class="link link--undecorated _link-blue">
+            <h3 class="menu__item__title" style="margin-bottom: .25em;">{{ event.title }}</h3>
+          </a>
+          <p class="no-margin small-text" >
+            <time class="time">
+              <span itemprop="startDate"><b>{{ event.start }}</b></span>
+              <span class="time__hours" style="color: #999;">{{ event.from }} - {{ event.until }}</span>
+            </time>
 
-				<li ng-repeat="program in programs | orderBy:orderProp | return: 'upcoming-events' | limitTo: 5">
-					<a href="{{ program.url }}" class="link link--undecorated">
-						{{ program.title | clean }}
-					</a> <br>
-					{{ program.custom_fields.event_start[0] | event: 'day' }}
-					{{ program.custom_fields.event_start_time[0] | event: 'time' }}
-				</li>
+            <span ng-bind-html="event.series"></span>
+          </p>
+        </header>
 
-				<a href="http://public.library.nova.edu/events/">See All Events</a>
-			</ul>
+        <section class="content">
+          <p class="no-margin">{{ event.excerpt }}</p>
+        </section>
+
+      </article>
 		</div>
 
 		<div class="col-md--sixcol align-center">

@@ -2,137 +2,129 @@
 
 <style type="text/css">
 
-.no-padding {
-	padding: 0;
-}
-
-.form__submit--inside {
-	position: absolute;
-	right: 0;
-	top: -.5em;
-}
-
-.modal header, .modal footer {
-	padding: 0;
-}
-.modal .modal-inner {
-	background: #f5f5f5;
-	border-radius: 2px;
-	padding: 1em;
-}
-
-.modal .modal-close:before {
-	background: rbga(0, 0, 0, .5);
-}
-
-.modal .modal-close:after {
-	background: #f5f5f5;
-}
-
 .card--excerpt {
 	height: 439px;
 }
 
-.menu__item{overflow:hidden;padding:0; margin: .35% 0; height: 215px;}.menu__item__content{background-color:white;bottom:0;color:#444;height:61px;left:0;padding:1em;position:absolute;width:100%;-webkit-transition:all .2s ease-out;transition:all .2s ease-out}.menu__item__title{color:#313547;font-size:1.2rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}@media only screen and (min-width: 64em){.menu__item__title{font-size:1.5rem}}.menu__item:hover .menu__item__content,.menu__item:focus .menu__item__content{height:100%}.link--grade{color:#E1E8ED;font-weight:bold}.link--grade--pre{color:#E2624F}.link--grade--e{color:#50afdf}.link--grade--ms{color:#FFAE3D}.link--grade--hs{color:#21AABD}
+.rack iframe {
+  border: none;
+  min-height: 300px;
+  width: 100%;
+}
 
 </style>
 
-	<form action="http://novacat.nova.edu/search/X/" role="form" name="novacat_search" id="novacat_search" method="get" class="background-base has-background form no-margin" role="form">
-		<div class="col-md--eightcol col--centered clearfix" style="padding: 2em 0 1em;">
-			<ul>
-				<li class="form__field no-margin">
+<article class="ad ad--hero ad--transparent card clearfix s--holocaust-ad no-margin">
 
-					<input class="form__input form__input--transparent form__input--full-width input--large search__search-field--transparent epsilon no-margin" id="SEARCH" name="SEARCH" placeholder="Search the Library Catalog" type="search" required style="border-bottom: 1px solid white;">
-					<input class="button button--small button--transparent form__submit--inside small-text" type="submit" value="<?php echo esc_attr__('Submit') ?>"/>
-				    <label class="align-right form__label clearfix zeta" for="SEARCH"><span class="hide-accessible">Search the Library Catalog</span> <span class="small-text">( <a href="#what-am-i-searching">What am I searching?</a> )</span></label>
+  <div class="clearfix wrap">
+    <div class="col-md--sixcol align-center ad__media">
+      <a href="//sherman.library.nova.edu/holocaust?utm_source=publib&utm_medium=banner&utm_campaign=holocaust-room">
+        <img src="//sherman.library.nova.edu/cdn/media/images/ads/boys.png" alt="Two young boys wearing jewish stars" />
+      </a>
+    </div>
 
+    <div class="col-md--sixcol">
 
-				</li>
-			</ul>
-		</div>
+      <div class="col-md--tencol col--centered ad__copy">
 
-	</form>
+        <header class="card__header">
+          <a class="link link--undecorated _link--blue" href="//sherman.library.nova.edu/holocaust?utm_source=aclib&utm_medium=banner&utm_campaign=holocaust-room" target="_self">
+            <h2 class="menu__item__title hide-accessible">Now Open</h2>
+          </a>
+        </header>
 
-	<section class="clearfix has-cards hero--small">
+        <section class="no-margin">
+          <p class="epsilon">
+            Now open on the 2nd floor, our <b>Holocaust Reflection and Resource Room</b> is a place
+            to learn about and to contemplate the horrendous acts that result from intolerance and hate.
+          </p>
+        </section>
 
-		<div class="wrap" ng-controller="AdController as adc">
+        </div>
+    </div>
 
-			<div class="col-md--twelvecol col-lg--eightcol" style="align-items: center; display: flex; justify-content: center; height: 439px;" ng-if=!adc.ads>
-				<blockquote>
-					<p>“She sounds like someone who spends a lot of time in libraries, which are the best sorts of people.”</p>
-					<cite>Catherynne M. Valente</cite>
-				</blockquote>
-			</div>
+    </div>
+  </article>
 
-			<span data-ng-repeat="ad in adc.ads | limitTo : 4">
+  <section class="clearfix has-cards hero">
 
-				<div data-ng-if="$index < 2" class="col-md--sixcol col-lg--fourcol">
+    <div class="wrap" ng-controller="AdController as adc">
 
-					<article class="card card--excerpt">
-						<div class="card__media">
-							<a ng-href="{{ ad.link }}?utm_source=pls&utm_medium=card&utm_campaign=ad-manager">
-								<img ng-src="{{ad.media}}">
-							</a>
-						</div>
+      <div class="col-md--twelvecol col-lg--eightcol" style="align-items: center; display: flex; justify-content: center; height: 439px;" ng-if=!adc.ads>
+        <blockquote>
+          <p>“She sounds like someone who spends a lot of time in libraries, which are the best sorts of people.”</p>
+          <cite>Catherynne M. Valente</cite>
+        </blockquote>
+      </div>
 
-						<header class="card__header">
-							<a ng-href="{{ ad.link }}?utm_source=pls&utm_medium=card&utm_campaign=ad-manager" class="link link--undecorated _link-blue">
-								<h2 class="menu__item__title">{{ ad.title }}</h2>
-							</a>
-						</header>
+      <span data-ng-repeat="ad in adc.ads | limitTo : 4">
 
-						<section class="content no-margin">
-							{{ ad.excerpt }}
-						</section>
+        <div data-ng-if="$index < 2" class="col-md--sixcol col-lg--fourcol">
 
-					</article>
+          <article class="card card--excerpt">
+            <div class="card__media">
+              <a ng-href="{{ ad.link }}?utm_source=pls&utm_medium=card&utm_campaign=ad-manager">
+                <img ng-src="{{ad.media}}">
+              </a>
+            </div>
 
-				</div>
+            <header class="card__header">
+              <a ng-href="{{ ad.link }}?utm_source=pls&utm_medium=card&utm_campaign=ad-manager" class="link link--undecorated _link-blue">
+                <h2 class="menu__item__title">{{ ad.title }}</h2>
+              </a>
+            </header>
 
-				<a data-ng-if="$index >= 2" class="col-sm--twelvecol col-md--sixcol col-lg--fourcol card media menu__item" ng-href="{{ ad.link }}?utm_source=pls&utm_medium=card&utm_campaign=ad-manager">
-						<img ng-src="{{ad.media}}">
-					<span class="menu__item__content">
-						<h2 class="menu__item__title">
-							{{ ad.title }}
-						</h2>
-						<span class="zeta">
-							{{ ad.excerpt }}
-						</span>
-					</span>
-				</a>
+            <section class="content no-margin">
+              {{ ad.excerpt }}
+            </section>
 
-			</span>
+          </article>
 
-			<span data-ng-if="adc.ads.length < 4">
-				<a class="col-sm--twelvecol col-md--sixcol col-lg--fourcol card media menu__item" alt="Magazines through Flipster" data-ng-cloak title="Flipster" ng-href="http://sherman.library.nova.edu/auth/index.php?aid=1250&url=http://web.b.ebscohost.com/eon/results?sid=ee9edc8b-94d4-4ef1-ad56-c70e10e92f29@sessionmgr114&vid=1&hid=109&bquery=Organic Life&bdata=JmRiPWVvbiZjbGkwPUVIMSZjbHYwPVkmdHlwZT0wJnNpdGU9ZW9uLWxpdmU=" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Yum (Organic Life)']);">
-						<img src="//sherman.library.nova.edu/cdn/media/images/features/organic-life.jpg">
-					<span class="menu__item__content">
-						<h3 class="menu__item__title">
-							Yum! <small>(Organic Life on Flipster)</small>
-						</h3>
-						<span class="zeta">
-							<b>Sign in</b> with just your library card and
-							read them for free.
-						</span>
-					</span>
-				</a>
-			</span>
+        </div>
 
-			<span data-ng-if="adc.ads.length < 3">
-				<a class="col-sm--twelvecol col-md--sixcol col-lg--fourcol card media menu__item" alt="OneClickdigital" data-ng-cloak title="OneClickdigital" href="http://sherman.library.nova.edu/sites/spotlight/databases/oneclickdigital/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Audio and E-Books (OneClick) - The Martian']);">
-						<img src="http://public.library.nova.edu/wp-content/uploads/2015/11/see-me-cover.jpg" alt="">
-					<span class="menu__item__content">
-						<h3 class="menu__item__title">Audio and E-books <small>(OneClick)</small></h3>
-						<span class="zeta">
-							<b>Download bestsellers</b> like the Nicholas Spark's <b>See Me</b> using any device with your library card.
-						</span>
-					</span>
-				</a>
-			</span>
+        <a data-ng-if="$index >= 2" class="col-sm--twelvecol col-md--sixcol col-lg--fourcol card media menu__item" ng-href="{{ ad.link }}?utm_source=pls&utm_medium=card&utm_campaign=ad-manager">
+            <img ng-src="{{ad.media}}">
+          <span class="menu__item__content">
+            <h2 class="menu__item__title">
+              {{ ad.title }}
+            </h2>
+            <span class="zeta">
+              {{ ad.excerpt }}
+            </span>
+          </span>
+        </a>
 
-	    </div><!--/.wrap-->
-	</section>
+      </span>
 
+      <span data-ng-if="adc.ads.length < 4">
+        <a class="col-sm--twelvecol col-md--sixcol col-lg--fourcol card media menu__item" alt="Magazines through Flipster" data-ng-cloak title="Flipster" ng-href="http://sherman.library.nova.edu/auth/index.php?aid=1250&url=http://web.b.ebscohost.com/eon/results?sid=ee9edc8b-94d4-4ef1-ad56-c70e10e92f29@sessionmgr114&vid=1&hid=109&bquery=Organic Life&bdata=JmRiPWVvbiZjbGkwPUVIMSZjbHYwPVkmdHlwZT0wJnNpdGU9ZW9uLWxpdmU=" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Yum (Organic Life)']);">
+            <img src="//sherman.library.nova.edu/cdn/media/images/features/organic-life.jpg">
+          <span class="menu__item__content">
+            <h3 class="menu__item__title">
+              Yum! <small>(Organic Life on Flipster)</small>
+            </h3>
+            <span class="zeta">
+              <b>Sign in</b> with just your library card and
+              read them for free.
+            </span>
+          </span>
+        </a>
+      </span>
+
+      <span data-ng-if="adc.ads.length < 3">
+        <a class="col-sm--twelvecol col-md--sixcol col-lg--fourcol card media menu__item" alt="OneClickdigital" data-ng-cloak title="OneClickdigital" href="http://sherman.library.nova.edu/sites/spotlight/databases/oneclickdigital/" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Audio and E-Books (OneClick) - The Martian']);">
+            <img src="http://public.library.nova.edu/wp-content/uploads/2015/11/see-me-cover.jpg" alt="">
+          <span class="menu__item__content">
+            <h3 class="menu__item__title">Audio and E-books <small>(OneClick)</small></h3>
+            <span class="zeta">
+              <b>Download bestsellers</b> like the Nicholas Spark's <b>See Me</b> using any device with your library card.
+            </span>
+          </span>
+        </a>
+      </span>
+
+      </div><!--/.wrap-->
+  </section>
 
 	<nav id="panels" class="clearfix menu--panels" role="navigation">
 
@@ -168,8 +160,8 @@
 
 <?php get_template_part( 'partials/info-panels' ); ?>
 
-<div class="has-cards hero">
-	<div class="clearfix wrap">
+<div class="has-cards">
+	<div class="clearfix hero wrap">
 
 		<div class="col-md--sixcol col-lg--eightcol">
 
@@ -186,33 +178,19 @@
 					<p class="zeta no-margin">
 						You can now get all of your magazines for free on your phone, your tablet, or in the browser.
 					</p>
-					<a class="button button--default button--small" href="http://0-auth.novasoutheastern.org.novacat.nova.edu/go/redirect.php?aid=1360&url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&custid=nsfl&profile=eon">Log In</a>
+					<a class="button button--default button--small" href="http://sherman.library.nova.edu/auth/index.php?aid=1360">
+            <span data-ng-if="!ac.info">Log in</span>
+            <span data-ng-if="ac.info">Browse</span>
+          </a>
 
 				</div>
 
 			</div>
 
-			<nav class="media--gallery clearfix" role="navigation">
-				<a href="http://search.ebscohost.com.ezproxylocal.library.nova.edu/login.aspx?direct=true&db=eon&bquery=rolling+stone&cli0=EH1&clv0=Y&type=0&site=eon-live">
-					<img class="col-sm--sixcol col-md--threecol" src="http://sherman.library.nova.edu/images/magazines/rolling-stone.jpg">
-				</a>
+      <div class="rack" id="flipster"></div>
 
-				<a href="http://search.ebscohost.com.ezproxylocal.library.nova.edu/login.aspx?direct=true&db=eon&bquery=%26quot%3bTime%26quot%3b&cli0=EH1&clv0=Y&type=0&site=eon-live">
-					<img class="col-sm--sixcol col-md--threecol" src="http://sherman.library.nova.edu/images/magazines/time.jpg">
-				</a>
-
-				<a href="http://search.ebscohost.com.ezproxylocal.library.nova.edu/login.aspx?direct=true&db=eon&bquery=Entertainment+Weekly&cli0=EH1&clv0=Y&type=0&site=eon-live">
-					<img class="col-sm--sixcol col-md--threecol" src="http://sherman.library.nova.edu/images/magazines/entertainment-weekly.jpg">
-				</a>
-
-				<a href="http://search.ebscohost.com.ezproxylocal.library.nova.edu/login.aspx?direct=true&db=eon&bquery=Consumer+Reports&cli0=EH1&clv0=Y&type=0&site=eon-live">
-					<img class="col-sm--sixcol col-md--threecol" src="http://sherman.library.nova.edu/images/magazines/consumer-reports.jpg">
-				</a>
-			</nav>
-
-			<p class="clearfix zeta no-margin">
-				See <a href="http://0-auth.novasoutheastern.org.novacat.nova.edu/go/redirect.php?aid=1360&url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&custid=nsfl&profile=eon">more magazines</a>.
-			</p>
+      <script src="//sherman.library.nova.edu/cdn/scripts/modules/flipster/flipster.js"></script>
+      <script>flipster.init( '#flipster' )</script>
 
 			</section>
 
