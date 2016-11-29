@@ -2,10 +2,6 @@
 
 <style type="text/css">
 
-.card--excerpt {
-	height: 439px;
-}
-
 .rack iframe {
   border: none;
   min-height: 300px;
@@ -14,39 +10,7 @@
 
 </style>
 
-<article class="ad ad--hero ad--transparent card clearfix s--holocaust-ad no-margin">
-
-  <div class="clearfix wrap">
-    <div class="col-md--sixcol align-center ad__media">
-      <a href="//sherman.library.nova.edu/holocaust?utm_source=publib&utm_medium=banner&utm_campaign=holocaust-room">
-        <img src="//sherman.library.nova.edu/cdn/media/images/ads/boys.png" alt="Two young boys wearing jewish stars" />
-      </a>
-    </div>
-
-    <div class="col-md--sixcol">
-
-      <div class="col-md--tencol col--centered ad__copy">
-
-        <header class="card__header">
-          <a class="link link--undecorated _link--blue" href="//sherman.library.nova.edu/holocaust?utm_source=aclib&utm_medium=banner&utm_campaign=holocaust-room" target="_self">
-            <h2 class="menu__item__title hide-accessible">Now Open</h2>
-          </a>
-        </header>
-
-        <section class="no-margin">
-          <p class="epsilon">
-            Now open on the 2nd floor, our <b>Holocaust Reflection and Resource Room</b> is a place
-            to learn about and to contemplate the horrendous acts that result from intolerance and hate.
-          </p>
-        </section>
-
-        </div>
-    </div>
-
-    </div>
-  </article>
-
-  <section class="clearfix has-cards hero">
+  <section class="clearfix has-cards hero--small">
 
     <div class="wrap" ng-controller="AdController as adc">
 
@@ -57,46 +21,27 @@
         </blockquote>
       </div>
 
-      <span data-ng-repeat="ad in adc.ads | limitTo : 4">
+      <ng-repeat data-ng-repeat="ad in adc.ads | limitTo : 3">
 
-        <div data-ng-if="$index < 2" class="col-md--sixcol col-lg--fourcol">
-
-          <article class="card card--excerpt">
-            <div class="card__media">
-              <a ng-href="{{ ad.link }}?utm_source=pls&utm_medium=card&utm_campaign=ad-manager">
+        <div class="col-md--sixcol col-lg--fourcol">
+          <a class="link link--undecorated" ng-href="{{ ad.link }}?utm_source=pls&utm_medium=card&utm_campaign=ad-manager">
+            <article class="card">
+              <div class="card__media">
                 <img ng-src="{{ad.media}}">
-              </a>
-            </div>
-
-            <header class="card__header">
-              <a ng-href="{{ ad.link }}?utm_source=pls&utm_medium=card&utm_campaign=ad-manager" class="link link--undecorated _link-blue">
-                <h2 class="menu__item__title">{{ ad.title }}</h2>
-              </a>
-            </header>
-
-            <section class="content no-margin">
-              {{ ad.excerpt }}
-            </section>
-
-          </article>
-
+              </div>
+              <header class="card__header">
+                <h2 class="card__title delta">{{ ad.title }}</h2>
+              </header>
+              <section class="card__content">
+                <p class="zeta">{{ ad.excerpt }}</p>
+              </section>
+            </article>
+          </a>
         </div>
 
-        <a data-ng-if="$index >= 2" class="col-sm--twelvecol col-md--sixcol col-lg--fourcol card media menu__item" ng-href="{{ ad.link }}?utm_source=pls&utm_medium=card&utm_campaign=ad-manager">
-            <img ng-src="{{ad.media}}">
-          <span class="menu__item__content">
-            <h2 class="menu__item__title">
-              {{ ad.title }}
-            </h2>
-            <span class="zeta">
-              {{ ad.excerpt }}
-            </span>
-          </span>
-        </a>
+      </ng-repeat>
 
-      </span>
-
-      <span data-ng-if="adc.ads.length < 4">
+      <span data-ng-if="adc.ads.length < 3">
         <a class="col-sm--twelvecol col-md--sixcol col-lg--fourcol card media menu__item" alt="Magazines through Flipster" data-ng-cloak title="Flipster" ng-href="http://sherman.library.nova.edu/auth/index.php?aid=1250&url=http://web.b.ebscohost.com/eon/results?sid=ee9edc8b-94d4-4ef1-ad56-c70e10e92f29@sessionmgr114&vid=1&hid=109&bquery=Organic Life&bdata=JmRiPWVvbiZjbGkwPUVIMSZjbHYwPVkmdHlwZT0wJnNpdGU9ZW9uLWxpdmU=" onClick="_gaq.push(['_trackEvent', 'Features - Front Page', 'Click', 'Yum (Organic Life)']);">
             <img src="//sherman.library.nova.edu/cdn/media/images/features/organic-life.jpg">
           <span class="menu__item__content">
