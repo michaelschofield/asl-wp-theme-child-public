@@ -7,7 +7,7 @@
 
 		<div class="col-md--sixcol first">
 
-			<div class="col-md--eightcol col-md--centered hero">
+			<div class="col-md--eightcol col--centered hero">
 
 			<?php if ( get_post_meta( get_the_ID(), 'mission_statement', true ) ) : ?>
 				<?php if ( get_post_meta( get_the_ID(), 'mission_title', true ) ) : ?>
@@ -16,7 +16,7 @@
 				</header>
 				<?php endif; ?>
 
-				<div class="vcard col-md--centered clearfix">
+				<div class="vcard clearfix">
 					<p class="address">
 						<span class="fn">Alvin Sherman Library, Research, and Information Technology Center </span><br>
 						<span class="street-address">3100 Ray Ferrero, Jr. Blvd</span> <br>
@@ -45,7 +45,7 @@
 
 			<div id="inner-content" class="wrap clearfix">
 
-				    <div id="main" class="col-md--eightcol col-md--centered clearfix" role="main">
+				    <div id="main" class="col-md--eightcol col--centered clearfix" role="main">
 
 				    	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					    <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
