@@ -57,13 +57,20 @@
       height: auto;
       visibility: visible;
     }
+    .svg--info--warning {
+      fill: #ffae3d;
+    }
+
+    .form__input+.form__input--inside {
+      position: absolute;
+    }
 	</style>
 
     <base href="/">
 
 	</head>
 
-	<body <?php body_class(); ?> ng-controller="ApplicationController as ac">
+	<body <?php body_class(); ?> data-ng-controller="ApplicationController as ac">
 
 	<?php get_template_part( 'partials/svg-icons' ); ?>
 	<?php get_template_part( 'partials/alerts' ); ?>
@@ -254,7 +261,7 @@
       <input type="checkbox" class="checkbox-toggle" id="search-hero" aria-describedby="search-toggle-description" <?php echo ( is_front_page() ? 'checked' : '' );?>>
       <span class="hide-accessible" id="search-toggle-description">Checking this box will open the search options</span>
 
-      <form ng-attr-action="{{ searchtype === 'libweb' ? ( 'http://sharksearch.nova.edu/search' | trusted ): ( 'https://novacat.nova.edu/search/X' | trusted ) }}" role="form" name="novacat_search" id="novacat_search" method="get" class="form has-cards no-margin clearfix search-hero" role="form">
+      <form ng-attr-action="{{ searchtype === 'libweb' ? ( 'http://sharksearch.nova.edu/search' | trusted ) : ( searchtype === 'lists' || searchtype === 'events' ? ('http://sherman.library.nova.edu/sites/spotlight/' | trusted) : ( 'https://novacat.nova.edu/search/X' | trusted ) )}}" role="form" name="novacat_search" id="novacat_search" method="get" class="form has-cards no-margin clearfix search-hero ng-cloak" role="form">
 
         <div class="clearfix hero">
           <div class="col--centered clearfix col-sm--tencol col-md--eightcol">
@@ -270,14 +277,17 @@
                       id="searchtype"
                       ng-model="searchtype"
                       ng-init="searchtype = 'X'">
-                      <option value="libweb" selected>Library Website</option>
+
                       <optgroup label="Catalog">
-                        <option value="X">Keyword</option>
+                        <option value="X" selected>Keyword</option>
                         <option value="a">Author</option>
                         <option value="t">Title</option>
                         <option value="d">Subject</option>
                         <option value="c">Number</option>
                       </optgroup>
+                        <option value="libweb">Library Website</option>
+                        <option value="lists">Lists of Books and Movies</option>
+                        <option value="events">Programs and Events</option>
                     </select>
                   </div>
                 </li>
@@ -285,7 +295,21 @@
 
               <div class="col-sm--twelvecol col-md--eightcol">
                 <li class="form__field no-margin">
-                  <span ng-if="searchtype !== 'libweb'">
+
+                  <ng-if data-ng-if="searchtype === 'lists' || searchtype === 'events'">
+                    <label for="searcharg" class="hide-accessible">Search for {{ searchtype === 'lists' ? 'a Book or Movie List' : 'an Upcoming Event' }}</label>
+                    <input class="card form__input form__input--full-width input--large epsilon no-margin" id="searcharg" ng-attr-name="{{ searchtype !== 'lists' && searchtype !== 'events'  ? 'searcharg' : 'search' }}" type="search" required data-ng-model="searcharg" data-ng-change="searchtext=searcharg"  style="height: 55px; line-height: 55px;">
+                    <button class="button button--small epsilon form__submit form__submit--inside no-margin button--disabled" data-ng-class="{ 'button--primary--alt' : searcharg, 'button--disabled' : !searcharg}" type="submit" value="Search">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" height="24" viewBox="0 0 24 24" width="24">
+                          <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                          <path d="M0 0h24v24H0z" fill="none"/>
+                      </svg>
+                      <span class="button__text">Search</span>
+                    </button>
+                    <input type="hidden" name="post_type" value="{{ searchtype === 'lists' ? 'list' : 'spotlight_events' }}">
+                  </ng-if>
+
+                  <ng-if data-ng-if="searchtype !== 'libweb' && searchtype !== 'lists' && searchtype !== 'events'">
                     <label for="searcharg" class="hide-accessible">Search the library catalog</label>
                     <input class="card form__input form__input--full-width input--large epsilon no-margin" id="searcharg" name="searcharg" placeholder="Search the Library Catalog" type="search" required data-ng-model="searcharg" data-ng-change="searchtext=searcharg">
                     <button class="button button--small epsilon form__submit form__submit--inside no-margin button--disabled" data-ng-class="{ 'button--primary--alt' : searcharg, 'button--disabled' : !searcharg}" type="submit" value="Search">
@@ -295,9 +319,9 @@
                       </svg>
                       <span class="button__text">Search</span>
                     </button>
-                  </span>
+                  </ng-if>
 
-                  <span ng-if="searchtype === 'libweb'">
+                  <ng-if data-ng-if="searchtype === 'libweb'">
                     <label for="searcharg" class="hide-accessible">Search the library website</label>
 
                     <input type="hidden" name="client" value="aslritc">
@@ -317,14 +341,18 @@
                       </svg>
                       <span class="button__text">Search</span>
                     </button>
-
-                  </span>
+                  </ng-if>
                 </li>
               </div>
 
-              <p class="small-text no-margin" ng-show="searchtype !== 'X' && searchtype !== 'libweb'" style="float: left;"><svg class="svg svg--info" viewBox="0 0 32 32"><path class="path1" d="M18.286 24.571v-2.857q0-0.25-0.161-0.411t-0.411-0.161h-1.714v-9.143q0-0.25-0.161-0.411t-0.411-0.161h-5.714q-0.25 0-0.411 0.161t-0.161 0.411v2.857q0 0.25 0.161 0.411t0.411 0.161h1.714v5.714h-1.714q-0.25 0-0.411 0.161t-0.161 0.411v2.857q0 0.25 0.161 0.411t0.411 0.161h8q0.25 0 0.411-0.161t0.161-0.411zM16 8.571v-2.857q0-0.25-0.161-0.411t-0.411-0.161h-3.429q-0.25 0-0.411 0.161t-0.161 0.411v2.857q0 0.25 0.161 0.411t0.411 0.161h3.429q0.25 0 0.411-0.161t0.161-0.411zM27.429 16q0 3.732-1.839 6.884t-4.991 4.991-6.884 1.839-6.884-1.839-4.991-4.991-1.839-6.884 1.839-6.884 4.991-4.991 6.884-1.839 6.884 1.839 4.991 4.991 1.839 6.884z"></path></svg> You can only choose formats with a <mark>keyword</mark> search.</p>
+              <p class="small-text no-margin" style="float: left; line-height: 1.75;" data-ng-if="searchtype !== 'X'"><svg class="svg svg--info" viewBox="0 0 32 32"><path class="path1" d="M18.286 24.571v-2.857q0-0.25-0.161-0.411t-0.411-0.161h-1.714v-9.143q0-0.25-0.161-0.411t-0.411-0.161h-5.714q-0.25 0-0.411 0.161t-0.161 0.411v2.857q0 0.25 0.161 0.411t0.411 0.161h1.714v5.714h-1.714q-0.25 0-0.411 0.161t-0.161 0.411v2.857q0 0.25 0.161 0.411t0.411 0.161h8q0.25 0 0.411-0.161t0.161-0.411zM16 8.571v-2.857q0-0.25-0.161-0.411t-0.411-0.161h-3.429q-0.25 0-0.411 0.161t-0.161 0.411v2.857q0 0.25 0.161 0.411t0.411 0.161h3.429q0.25 0 0.411-0.161t0.161-0.411zM27.429 16q0 3.732-1.839 6.884t-4.991 4.991-6.884 1.839-6.884-1.839-4.991-4.991-1.839-6.884 1.839-6.884 4.991-4.991 6.884-1.839 6.884 1.839 4.991 4.991 1.839 6.884z"></path></svg>
+                <ng-if data-ng-if="searchtype == 'a' || searchtype == 'c' || searchtype == 't' || searchtype == 'd'">This is an <mark>index search</mark>. You won't be able to narrow it down to a format (e.g., just e-books). For that, try a <mark>keyword search</mark>.</ng-if>
+                <ng-if data-ng-if="searchtype === 'libweb'">Search all our content other than our <a href="http://public.library.nova.edu/research/">databases</a> or <a href="https://novacat.nova.edu">catalog</a>.</ng-if>
+                <ng-if data-ng-if="searchtype === 'lists'">We make <a href="http://public.library.nova.edu/lists">lists</a> of movies, books, and music for holidays, birthdays, and major events. </ng-if>
+                <ng-if data-ng-if="searchtype === 'events'">Look for upcoming events, workshops, exhibits, and other programs.</ng-if>
+              </p>
 
-              <div class="align-right" ng-if="searchtype !== 'libweb'">
+              <div class="align-right" ng-if="searchtype !== 'libweb' && searchtype !== 'lists'">
                 <a class="link link--undecorated small-text" href="https://novacat.nova.edu/search/X#refined" class="small-text" ng-show="!searcharg">Advanced Search</a>
               </div>
 
@@ -337,13 +365,6 @@
 
 			<nav class="top-menu" role="navigation">
 				<div id="inner-menu" class="wrap clearfix">
-
-					<div class="search">
-
-						<?php echo sherman_wpsearch(); ?>
-
-					</div>
-
 					<?php wp_nav_menu( array('menu' => 'Top Menu' ) ); ?>
 				</div>
 			</nav>

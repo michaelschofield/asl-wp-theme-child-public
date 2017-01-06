@@ -19,7 +19,7 @@
 
 </style>
 
-<ng-controller data-ng-controller="AdController as adc" data-ng-cloak>
+<ng-controller data-ng-controller="AdController as adc" data-ng-cloak data-audience="public">
 
   <section class="clearfix has-cards hero--small">
 
@@ -30,7 +30,7 @@
           <h2 class="align-center delta no-margin hero--small separator separator--top">Feature</h2>
 
           <ng-repeat data-ng-repeat="ad in adc.ads | limitTo : 1" data-ng-cloak>
-            <a class="link link--undecorated" ng-href="{{ ad.link }}?utm_source=pls&utm_medium=card&utm_campaign=ad-manager">
+            <a class="link link--undecorated" ng-href="{{ ad.link }}?utm_source=pls&utm_medium=card&utm_campaign=ad-manager&utm_content={{ad.title}}">
               <article class="card">
                 <div class="card__media">
                   <img ng-src="{{ad.media}}">
@@ -67,13 +67,13 @@
           <h2 class="align-center delta no-margin hero--small separator separator--top">Book and Movie Lists</h2>
         </a>
         <ng-repeat data-ng-repeat="list in lc.lists | limitTo : 1">
-          <a class="link link--undecorated" ng-href="{{ list.url }}">
+          <a class="link link--undecorated" ng-href="{{ list.url }}?utm_source=pls&utm_medium=card&utm_campaign=listicle&utm_content={{list.title}}">
             <article class="card">
-              <div class="card__media">
+              <div class="card__media" data-ng-if="list.media">
                 <img ng-src="{{list.media[0]}}">
               </div>
               <header class="card__header">
-                <h2 class="card__title delta">{{ list.title }}</h2>
+                <h2 class="card__title delta" data-ng-class="{ 'no-margin' : !list.media }">{{ list.title }}</h2>
               </header>
               <section class="card__content">
                 <p class="zeta">{{ list.excerpt }}</p>
@@ -112,15 +112,15 @@
 
         <ng-repeat data-ng-repeat="event in ec.events">
           <article role="article">
-            <a ng-href="{{ event.url }}" class="link link--undecorated">
+            <a ng-href="{{ event.url }}?utm_source=pls&utm_medium=card&utm_campaign=event-list&utm_content={{event.title}}" class="link link--undecorated">
               <div class="card">
                 <span class="card__color-code" data-ng-class="{ 'card__color-code--kids' : event.audience === 'kids', 'card__color-code--teens' : event.audience === 'teens' }"></span>
                 <header class="card__header">
                   <h3 class="card__title zeta no-margin">{{ event.title }}</h3>
                    <div class="small-text">
                     <time class="time">
-                      <b>{{ event.start }}</b>
-                      <span class="time__hours" style="color:#999;">{{ event.from }} {{ event.until }}</span>
+                      <b>{{ event.start }} {{ event.end ? ' - ' + event.end : '' }}</b>
+                      <span class="time__hours" style="color:#999;" data-ng-if="event.until">{{ event.from }} {{ event.until ? ' - ' + event.until : '' }}</span>
                     </time>
                   </div>
                 </header>
@@ -129,68 +129,6 @@
           </article>
         </ng-repeat>
 
-        <ng-if class="clearfix" data-ng-if="!ec.events">
-
-          <a ng-href="http://sherman.library.nova.edu/sites/spotlight/event/kuniko-yamamoto-magical-masks-mime-origami-and-music-of-japan/" class="link link--undecorated">
-            <div class="card">
-              <span class="card__color-code card__color-code--kids"></span>
-              <header class="card__header">
-                <h3 class="card__title zeta no-margin">Kuniko Yamamoto: Magical Masks, Mime, Origami and Music of Japan</h3>
-                <div class="small-text">
-                 <time class="time">
-                   <b>Saturday, February 11th</b>
-                   <span class="time__hours" style="color:#999;">2:00 p.m. to 3:00 p.m.</span>
-                 </time>
-               </div>
-              </header>
-            </div>
-          </a>
-
-          <a ng-href="http://sherman.library.nova.edu/sites/spotlight/event/no-gmc-no-story/" class="link link--undecorated">
-            <div class="card">
-              <span class="card__color-code"></span>
-              <header class="card__header">
-                <h3 class="card__title zeta no-margin">Goal, Motivation, or Conflict</h3>
-                <div class="small-text">
-                 <time class="time">
-                   <b>Saturday, February 11th</b>
-                   <span class="time__hours" style="color:#999;">2:00 p.m. to 3:00 p.m.</span>
-                 </time>
-               </div>
-              </header>
-            </div>
-          </a>
-
-          <a ng-href="http://sherman.library.nova.edu/sites/spotlight/event/young-authors-writing-group-6/" class="link link--undecorated">
-            <div class="card">
-              <span class="card__color-code card__color-code--teens"></span>
-              <header class="card__header">
-                <h3 class="card__title zeta no-margin">Young Authors Writing Group</h3>
-                <div class="small-text">
-                 <time class="time">
-                   <b>Saturday, February 18th</b>
-                   <span class="time__hours" style="color:#999;">4:00 p.m. to 6:00 p.m.</span>
-                 </time>
-               </div>
-              </header>
-            </div>
-          </a>
-
-          <a ng-href="http://sherman.library.nova.edu/sites/spotlight/event/afrotopia-art-and-the-politics-of-representation/" class="link link--undecorated">
-            <div class="card">
-              <span class="card__color-code"></span>
-              <header class="card__header">
-                <h3 class="card__title zeta no-margin">Afrotopia: Art and the Politics of Representation</h3>
-                <div class="small-text">
-                 <time class="time">
-                   <b>Thursday, February 23rd</b>
-                   <span class="time__hours" style="color:#999;">- Friday, March 10th</span>
-                 </time>
-               </div>
-              </header>
-            </div>
-          </a>
-        </ng-if>
         <a class="link" href="http://sherman.library.nova.edu/sites/spotlight/events">More events</a>
 
       </ng-controller>
@@ -301,7 +239,7 @@
 
         <ng-repeat data-ng-repeat="ad in adc.ads | limitTo : 3" data-ng-if="$index > 0">
 
-            <a class="link link--undecorated" ng-href="{{ ad.link }}?utm_source=pls&utm_medium=card&utm_campaign=ad-manager">
+            <a class="link link--undecorated" ng-href="{{ ad.link }}?utm_source=pls&utm_medium=card&utm_campaign=ad-manager&utm_content=below-fold">
               <article class="card">
                 <div class="card__media">
                   <img ng-src="{{ad.media}}">

@@ -1,25 +1,22 @@
 <?php get_header(); ?>
 
-<section class="clearfix has-background-image" style="background: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>) center right; background-size: 50%;">
-
-	<div class="col-md--sixcol has-background background-base">
-
-		<div class="col-md--tencol col--centered clearfix hero">
-
-		<?php if ( get_post_meta( get_the_ID(), 'mission_statement', true ) ) : ?>
-			<?php if ( get_post_meta( get_the_ID(), 'mission_title', true ) ) : ?>
-			<header>
-				<span class="gamma"><?php echo get_post_meta( get_the_ID(), 'mission_title', true); ?></span>
-			</header>
-			<?php endif; ?>
-			<p class="epsilon">
-				<?php echo get_post_meta( get_the_ID(), 'mission_statement', true); ?>
-			</p>
-		<?php endif; ?>
-		</div>
-	</div>
-
-</section>
+<ng-controller data-ng-controller="AdController as adc" data-audience="research" data-ng-cloak>
+  <ng-repeat data-ng-repeat="ad in adc.ads | limitTo: 1">
+  <section class="clearfix has-background-image" style="background: url( {{ad.media }}) center right; background-size: 50%;">
+  	<div class="col-md--sixcol has-background background-base">
+  		<div class="col-md--tencol col--centered clearfix hero">
+  			<header>
+  				<span class="gamma">{{ ad.title }}</span>
+  			</header>
+  			<p class="epsilon">
+  				{{ ad.excerpt }}
+  			</p>
+        <a ng-href="{{ ad.link }}" class="button button--primary--alt">Try it Out</a>
+  		</div>
+  	</div>
+  </section>
+  </ng-repeat>
+</ng-controller>
 
 <nav id="panels"class="menu--panels clearfix" role="navigation">
 
